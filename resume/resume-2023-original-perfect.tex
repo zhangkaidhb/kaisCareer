@@ -1,0 +1,227 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{ctex}
+\usepackage{geometry}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% 页面设置
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 标题格式
+\titleformat{\section}
+  {\Large\bfseries\sffamily\raggedright}
+  {}
+  {0em}
+  {}
+  [{\titlerule[0.5pt]}]
+
+\titleformat{\subsection}
+  {\large\bfseries\sffamily}
+  {}
+  {0em}
+  {}
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+\titlespacing{\subsection}{0pt}{6pt}{4pt}
+
+% 列表格式
+\setlist{
+  leftmargin=0pt,
+  itemsep=3pt,
+  parsep=0pt,
+  topsep=3pt,
+  labelsep=8pt
+}
+
+% 超链接设置
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+
+\begin{document}
+
+% 个人信息
+\begin{center}
+  {\Huge\bfseries\sffamily 张凯}\\[6pt]
+  {\large\texttt{Tel.: +86 15122986177} | \texttt{E-Mail: 15122986177@163.com}}\\[6pt]
+  {\large 个人简历}\\[3pt]
+  {\normalsize 基本信息：张凯 | 婚姻状况：已婚 | 出生日期：1992年3月11日 | 毕业时间：2020年10月}
+\end{center}
+
+\vspace{12pt}
+
+\hrule
+\vspace{12pt}
+
+% 教育信息
+\section*{教育信息}
+
+\noindent
+\textbf{\sffamily 卡尔斯鲁厄理工学院(Karlsruhe Institut für Technologie)（KIT）} \hfill
+\textit{德国工学硕士}\\
+\textbf{2017年4月 – 2020年10月}\\[4pt]
+\textbf{专业：机电一体化及信息技术}\\[4pt]
+\begin{itemize}
+  \item 深化方向1：工业自动化
+  \item 深化方向2：机器人技术
+  \item 毕业设计：用于优化动态眼球追踪系统数据质量的分析方法的设计和验证
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 河北工业大学(211)} \hfill
+\textit{中国工学学士}\\
+\textbf{2012年9月 – 2016年7月}\\[4pt]
+\textbf{本专业：机械设计制造及其自动化}\\[4pt]
+\begin{itemize}
+  \item 毕业设计：人体工程学自动调节座椅（优秀毕业设计）
+\end{itemize}
+
+% 实践经验
+\section*{实践经验}
+
+\noindent
+\textbf{\sffamily 科世达(上海)机电有限公司，KOSTAL (Shanghai) Mechatronic Co., Ltd.} \hfill
+\textit{中国上海}\\
+\textbf{2020年12月 – 至今}
+
+\vspace{6pt}
+\textbf{\large 科世达车身域控制器 CEM 项目 | 集成开发负责人} \hfill
+\textit{2022年12月 – 至今}
+\textbf{集成开发负责人职责：}
+\begin{itemize}
+  \item 集成测试软硬件环境的搭建
+  \item 编译软件，烧入硬件，集成测试
+  \item 设计科世达产线终检程序
+  \item 设计硬件所需EMC上位机和EMC测试软件
+  \item 定位集成测试和系统测试出现的问题，推动相关工程师完善软件
+  \item 定位客户端出现的问题，推动相关工程师完善软件
+  \item 软件放行给客户，以及后期的维护
+\end{itemize}
+
+\vspace{6pt}
+\textbf{\large 基于 Vector 工具链的车身控制器自动化集成测试平台 | 创造者、推广者} \hfill
+\textit{2023年1月 – 2023年6月}
+\begin{itemize}
+  \item 利用Python基于客户CAN/LIN/IO Matrix生成CANoe CAPL脚本和vTESTstudio配置文件
+  \item 构建vTESTstudio自动化测试工程
+  \item 基于客户功能规范编写自动化测试用例
+  \item 将自动化测试用例导入到CANoe中进行自动化测试
+\end{itemize}
+
+\vspace{8pt}
+
+\textbf{\large 客户项目经验}
+\begin{itemize}
+  \item \textbf{宇通客车股份有限公司} - KBCM(车身控制器)项目 | 内灯模块软件开发工程师 \hfill \textit{2022年8月 – 2023年8月}
+  \item \textbf{长城汽车股份有限公司} - 欧拉好猫系列KBCM(车身控制器)项目 \hfill \textit{2022年2月 – 2023年8月}
+  \item \textbf{江西五十铃皮卡系列 PEPS(无钥匙进入系统)项目} | 集成开发负责人 \hfill \textit{2022年3月 – 2023年3月}
+  \item \textbf{江西五十铃皮卡系列 ESCL(电子转向柱锁)项目} | 集成开发负责人 \hfill \textit{2022年3月 – 2023年3月}
+  \item \textbf{理想汽车} - 车和家系列KBCM(车身控制器)项目 | 集成开发负责人 \hfill \textit{2022年3月 – 2022年10月}
+  \item \textbf{长城汽车股份有限公司} - 欧拉黑猫系列KBCM(车身控制器)项目 \hfill \textit{2021年1月 – 2021年12月}\\
+    \hspace{2cm}集成开发负责人 | BLE/TBOX/VCU/ESCL认证模块软件开发工程师
+\end{itemize}
+
+% 毕业设计
+\section*{毕业设计}
+
+\noindent
+\textbf{\sffamily 2019年8月 – 2020年8月}\\
+\textbf{Institut für Arbeitswissenschaft und Betriebsorganisation(KIT)，德国}\\
+\textbf{项目：用于优化动态眼球追踪系统数据质量的分析方法的设计和验证}
+\begin{itemize}
+  \item 设计实验收集眼球追踪系统的点云追踪图像数据
+  \item 利用开源目标识别AI模型Mask\_RCNN将图像数据转化为坐标数据集
+  \item 在Python中利用误差空间插值模型补偿眼球追踪系统，从而实现优化眼球追踪系统数据质量的目标
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 2018年10月 – 2019年1月}\\
+\textbf{系统控制实践，Institut für Regelungs- und Steuerungssysteme (KIT) 德国}
+\begin{itemize}
+  \item \textbf{倒立摆控制}
+  \begin{itemize}
+    \item 利用状态空间法构建系统模型
+    \item 在MATLAB/SIMULINK中进行系统控制模拟
+    \item 建立观测器并用最小二乘控制器实现平衡控制
+  \end{itemize}
+  \item \textbf{后轴试验台控制}
+  \begin{itemize}
+    \item 利用状态空间法构建系统模型
+    \item 对系统极点补偿，并进行解耦控制
+    \item 通过传递函数给定PID控制器各项参数
+    \item 在MATLAB/SIMULINK中模拟运行并进行PID参数整定
+  \end{itemize}
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 2015年5月 – 2015年7月}\\
+\textbf{PLC导轨滑块加工线设计 | 河北工业大学}
+\begin{itemize}
+  \item 根据载荷要求和所选分布结构计算所需导轨和滑块的功率和载荷
+  \item 利用计算所得功率和在要求对西门子导轨和滑块进行选型
+  \item 将厂家提供3D模型导入SolidWorks中进行模型装配
+  \item 利用Adams对关键节点进行力学分析
+  \item 编写PLC程序满足加工流程要求
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 2016年1月 – 2016年6月}\\
+\textbf{本科毕业设计，河北工业大学 | 天津}
+\textbf{项目：人体工程学自动调节座椅（原创题目）}
+\begin{itemize}
+  \item 结合人体工程学设计座椅结构
+  \item 利用机构学设计座椅调节方式
+  \item 在SolidWorks中1:1构建座椅3D模型
+  \item 在AutoCAD中绘制2D装配图和2D零件加工图
+\end{itemize}
+
+% 技能与爱好
+\section*{技能与爱好}
+
+\textbf{外语：}
+\begin{itemize}
+  \item 英语（雅思：6.5）
+  \item 德语（TestDaf：16/C1）
+\end{itemize}
+
+\textbf{软件工具技能：}
+\begin{itemize}
+  \item \textbf{编程语言：} Python、C++、MATLAB(Stateflow)
+  \item \textbf{Vector工具链：} DaVinci Developer\&Configurator、CANoe、vTESTstudio
+  \item \textbf{代码工具：} Smart SVN、SourceInsight、Eclipse
+  \item \textbf{调试工具：} iSYSTEM winIDEA
+  \item \textbf{生产力工具：} Xmind
+\end{itemize}
+
+\textbf{爱好特长：}
+\begin{itemize}
+  \item 台球、中长跑、硬笔书法、无动力帆船
+\end{itemize}
+
+% 特别经历和荣誉
+\section*{特别经历和荣誉}
+
+\begin{itemize}
+  \item \textbf{科世达亚洲总部AE电子开发部年夜饭晚会主持人} \hfill \textit{2023年2月16日}
+  \item \textbf{科世达(上海)机电有限公司2022年度优秀员工} \hfill \textit{2022年1月 – 2022年12月}
+  \item \textbf{科世达亚洲总部AE电子开发部年度表彰大会主持人} \hfill \textit{2022年2月28日}
+  \item \textbf{上海市防疫封控期间驻守公司，协助完成多项项目紧急任务} \hfill \textit{2022年3月28日 – 2022年6月1日}
+\end{itemize}
+
+\end{document}

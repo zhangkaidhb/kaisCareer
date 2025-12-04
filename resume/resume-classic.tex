@@ -1,0 +1,183 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{ctex}
+\usepackage{geometry}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+% 设置字体
+\setCJKmainfont{Microsoft YaHei}
+\setCJKsansfont{Microsoft YaHei}
+\setmainfont{Times New Roman}
+
+% 页面设置
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 标题格式 - 经典简历风格
+\titleformat{\section}
+  {\Large\bfseries\sffamily\raggedright}
+  {}
+  {0em}
+  {}
+  [{\titlerule[0.5pt]}]
+
+\titleformat{\subsection}
+  {\large\bfseries\sffamily}
+  {}
+  {0em}
+  {}
+  [\vspace{-2pt}]
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+\titlespacing{\subsection}{0pt}{6pt}{4pt}
+
+% 列表格式
+\setlist{
+  leftmargin=0pt,
+  itemsep=3pt,
+  parsep=0pt,
+  topsep=3pt,
+  labelsep=8pt
+}
+
+% 超链接设置
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+
+\begin{document}
+
+% 个人信息区域
+\begin{center}
+  {\Huge\bfseries\sffamily 张凯}\\[6pt]
+  {\large\texttt{15122986177@163.com} | \texttt{+86 15122986177} | 1992年3月11日}
+\end{center}
+
+\vspace{12pt}
+
+\hrule
+\vspace{12pt}
+
+% 教育背景
+\section*{教育背景}
+
+\noindent
+\textbf{\sffamily 卡尔斯鲁厄理工学院 (KIT)}\hfill
+\textit{德国卡尔斯鲁厄}\\
+\textbf{机电一体化与信息技术 硕士}\hfill
+\textit{2017年4月 -- 2020年10月}\\[4pt]
+\begin{itemize}
+  \item 专业方向1：工业自动化
+  \item 专业方向2：机器人技术
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 河北工业大学}\hfill
+\textit{中国天津}\\
+\textbf{机械设计制造及其自动化 学士}\hfill
+\textit{2012年9月 -- 2016年7月}\\[4pt]
+\begin{itemize}
+  \item 毕业论文：人性化自动调节椅的设计
+\end{itemize}
+
+% 工作经历
+\section*{工作经历}
+
+\noindent
+\textbf{\sffamily 沃尔沃汽车 | 软件集成工程师}\hfill
+\textit{中国上海 | 2023年11月 -- 至今}
+
+\vspace{6pt}
+\textbf{SPA3/GPA HI Integration项目 | AUTOSAR系统集成与工具开发}\hfill
+\textit{2023年11月 -- 2025年7月}
+\begin{itemize}
+  \item \textbf{负责跨域融合的软件架构集成}，主导ZC(NVIDIA Orin)与HI(Infineon TC397)的系统集成工作
+  \item \textbf{开发AUTOSAR集成工具链}，包括stakeholder\_build\_template构建模板和自动化代码生成工具
+  \item \textbf{管理SWC配置和代码生成}，自动生成ECUextract和.c/.h框架代码，提升开发效率
+  \item \textbf{开发配置转换工具}，实现yaml2arxml自动转换，简化配置管理流程
+  \item \textbf{替代Davinci Developer工具}，开发定制化工具解决原有工具链的局限性
+  \item \textbf{AUTOSAR配置优化}，解决Davinci Developer和Configurator中的复杂配置问题
+  \item \textbf{SOME/IP服务开发与测试}，负责车载以太网通信服务的设计、配置和验证
+  \item \textbf{车载网络测试}，使用CANoe配合VN5650设备进行通信协议测试和调试
+  \item \textbf{系统调试与问题定位}，使用劳德巴赫进行C代码断点调试，解决系统集成问题
+\end{itemize}
+
+\vspace{6pt}
+\textbf{Java APP代码门禁Pipeline架构设计}\hfill
+\textit{2025年8月 -- 至今}
+\begin{itemize}
+  \item \textbf{主导CI/CD架构设计}，基于Jenkins和Groovy脚本构建代码质量检查和自动化测试系统
+  \item \textbf{实现主从Job并发架构}，结合ktlint、detekt进行静态代码检查，提升代码审查效率
+  \item \textbf{设计分布式数据管理}，使用MongoDB实现检查结果的分批记录和集中仲裁机制
+  \item \textbf{解决关键技术难题}，包括共享库动态加载和版本管理等核心问题
+  \item \textbf{构建可配置测试框架}，支持YAML配置的自动化测试触发，提升测试灵活性
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 科世达(上海)机电有限公司 | 集成开发负责人/软件工程师}\hfill
+\textit{中国上海 | 2020年12月 -- 2023年11月}
+
+\vspace{6pt}
+\textbf{车身域控制器(CEM)项目 | 集成开发负责人}\hfill
+\textit{2022年12月 -- 2023年11月}
+\begin{itemize}
+  \item 搭建集成测试的硬件和软件环境，编译软件、烧录硬件并进行集成测试
+  \item 设计生产线最终检验程序，设计EMC上位机和PCBA的EMC测试专用软件
+  \item 定位集成测试和系统测试中的问题，与相关工程师沟通改进软件
+  \item 定位客户问题并帮助相关工程师改进软件，向客户发布软件并提供维护服务
+\end{itemize}
+
+\vspace{6pt}
+\textbf{Vector工具链的车身控制器自动化集成测试平台 | 创建者、推广者}\hfill
+\textit{2023年1月 -- 2023年6月}
+\begin{itemize}
+  \item 基于客户的CAN/LIN/IO矩阵使用Python生成CANoe CAPL脚本和vTESTstudio配置文件
+  \item 在vTESTstudio中构建自动化测试项目，根据客户功能规格编写自动化测试用例
+  \item 将自动化测试用例导入CANoe进行自动化测试，提升测试效率
+\end{itemize}
+
+\vspace{6pt}
+\textbf{客户项目经验}
+\begin{itemize}
+  \item \textbf{宇通客车} - KBCM(车身控制器)项目 | 内饰灯模块软件开发工程师 (2022年8月 -- 2023年8月)
+  \item \textbf{长城汽车} - 欧拉好猫系列KBCM项目 | 集成开发负责人 (2022年2月 -- 2023年8月)
+  \item \textbf{江西五十铃} - PEPS(无钥匙进入系统) \& ESCL(电子转向锁)项目 | 集成开发负责人 (2022年3月 -- 2023年3月)
+  \item \textbf{理想汽车} - 车和家系列KBCM项目 | 集成开发负责人 (2022年3月 -- 2022年10月)
+  \item \textbf{长城汽车} - 欧拉黑猫系列KBCM项目 | 集成开发负责人 | BLE/TBOX/VCU/ESCL认证模块软件工程师 (2021年1月 -- 2021年12月)
+\end{itemize}
+
+% 专业技能
+\section*{专业技能}
+
+\begin{itemize}
+  \item \textbf{AUTOSAR架构与工具链：}熟悉Adaptive Platform和Classic Platform架构，精通Davinci Developer、Davinci Configurator，具备配置优化和问题解决能力
+  \item \textbf{车载通信协议：}具备SOME/IP服务设计、配置和测试的完整项目经验，熟悉车载以太网架构和通信调试
+  \item \textbf{编程语言：}熟悉现代C++特性，精通Java开发，熟练使用Python进行工具开发，掌握Groovy、Shell等脚本语言
+  \item \textbf{系统集成与自动化：}主导设计Jenkins-based的CI/CD系统，具备定制化开发工具的经验，熟练使用劳德巴赫等调试工具
+  \item \textbf{数据库与配置管理：}具备MongoDB大规模数据处理经验，熟练使用Git、SVN进行版本管理
+\end{itemize}
+
+% 特殊经历与荣誉
+\section*{特殊经历与荣誉}
+
+\begin{itemize}
+  \item \textbf{2023年2月16日：}主持科世亚亚洲总部AE开发部中国新年晚宴
+  \item \textbf{2022年1月 -- 2022年12月：}获得科世达(上海)机电有限公司2022年度优秀员工奖
+  \item \textbf{2022年2月28日：}主持科世亚亚洲总部AE开发部年度表彰大会
+  \item \textbf{2022年3月 -- 2022年6月：}上海疫情封控期间驻公司协助完成多项紧急任务
+\end{itemize}
+
+\end{document}

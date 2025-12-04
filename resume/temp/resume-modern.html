@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张凯 - 简历</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        .english-name {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .main-content {
+            padding: 2rem 3rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 3px solid #e2e8f0;
+            transition: border-color 0.3s ease;
+        }
+
+        .experience-item:hover {
+            border-left-color: #667eea;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d3748;
+            flex: 1;
+        }
+
+        .company {
+            font-size: 1rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .period {
+            font-size: 0.9rem;
+            color: #718096;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .location {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+
+        .achievement-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .achievement-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .achievement-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h4 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 0.3rem 0;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+
+        .education-item {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .university {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 1.5rem;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                gap: 1rem;
+            }
+
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .period {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <div class="name">张凯</div>
+            <div class="english-name">Kai Zhang</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    📱 +86 15122986177
+                </div>
+                <div class="contact-item">
+                    ✉️ 15122986177@163.com
+                </div>
+                <div class="contact-item">
+                    🎂 1992年3月11日
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <section class="section">
+                <h2 class="section-title">📚 教育背景</h2>
+
+                <div class="education-item">
+                    <div class="degree">机电一体化与信息技术 硕士</div>
+                    <div class="university">卡尔斯鲁厄理工学院 (KIT)</div>
+                    <div>2017年4月 – 2020年10月 | 德国卡尔斯鲁厄</div>
+                    <ul class="achievement-list">
+                        <li>专业方向1：工业自动化</li>
+                        <li>专业方向2：机器人技术</li>
+                    </ul>
+                </div>
+
+                <div class="education-item">
+                    <div class="degree">机械设计制造及其自动化 学士</div>
+                    <div class="university">河北工业大学</div>
+                    <div>2012年9月 – 2016年7月 | 中国天津</div>
+                    <ul class="achievement-list">
+                        <li>毕业论文：人性化自动调节椅的设计</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">💼 工作经历</h2>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">软件集成工程师</div>
+                            <div class="company">沃尔沃汽车</div>
+                        </div>
+                        <div class="period">2023年11月 – 至今</div>
+                    </div>
+                    <div class="location">📍 中国上海</div>
+
+                    <div style="margin-bottom: 1rem;">
+                        <div style="font-weight: 600; color: #4a5568; margin-bottom: 0.5rem;">SPA3/GPA HI Integration项目 | AUTOSAR系统集成与工具开发</div>
+                        <div style="font-size: 0.9rem; color: #718096; margin-bottom: 1rem;">2023年11月 – 2025年7月</div>
+                        <ul class="achievement-list">
+                            <li><span class="highlight">负责跨域融合的软件架构集成</span>，主导ZC(NVIDIA Orin)与HI(Infineon TC397)的系统集成工作</li>
+                            <li><span class="highlight">开发AUTOSAR集成工具链</span>，包括stakeholder_build_template构建模板和自动化代码生成工具</li>
+                            <li>管理SWC配置和代码生成，自动生成ECUextract和.c/.h框架代码</li>
+                            <li>开发yaml2arxml自动转换工具，简化配置管理流程</li>
+                            <li><span class="highlight">替代Davinci Developer工具</span>，开发定制化工具解决原有工具链局限性</li>
+                            <li>SOME/IP服务开发与测试，使用CANoe+VN5650进行通信协议验证</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div style="font-weight: 600; color: #4a5568; margin-bottom: 0.5rem;">Java APP代码门禁Pipeline架构设计</div>
+                        <div style="font-size: 0.9rem; color: #718096; margin-bottom: 1rem;">2025年8月 – 至今</div>
+                        <ul class="achievement-list">
+                            <li><span class="highlight">主导CI/CD架构设计</span>，基于Jenkins和Groovy脚本构建代码质量检查系统</li>
+                            <li>实现主从Job并发架构，结合ktlint、detekt进行静态代码检查</li>
+                            <li>设计MongoDB分布式数据管理，实现检查结果分批记录和集中仲裁</li>
+                            <li>解决共享库动态加载和版本管理等关键技术难题</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">集成开发负责人/软件工程师</div>
+                            <div class="company">科世达(上海)机电有限公司</div>
+                        </div>
+                        <div class="period">2020年12月 – 2023年11月</div>
+                    </div>
+                    <div class="location">📍 中国上海</div>
+                    <ul class="achievement-list">
+                        <li>负责车身域控制器(CEM)项目的集成开发</li>
+                        <li>创建Vector工具链的自动化集成测试平台</li>
+                        <li>服务多家知名汽车品牌：宇通客车、长城汽车、理想汽车等</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">🛠️ 专业技能</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>AUTOSAR架构与工具链</h4>
+                        <ul class="skill-list">
+                            <li>AUTOSAR AP/CP架构</li>
+                            <li>Davinci Developer & Configurator</li>
+                            <li>ECUextract代码生成</li>
+                            <li>arxml、yaml配置管理</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>车载通信协议</h4>
+                        <ul class="skill-list">
+                            <li>SOME/IP服务开发</li>
+                            <li>车载以太网</li>
+                            <li>CAN/LIN通信</li>
+                            <li>CANoe、VN5650测试</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>编程语言与开发</h4>
+                        <ul class="skill-list">
+                            <li>C++ (现代特性)</li>
+                            <li>Java (精通)</li>
+                            <li>Python (工具开发)</li>
+                            <li>Groovy、Shell脚本</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>系统集成与自动化</h4>
+                        <ul class="skill-list">
+                            <li>CI/CD架构设计</li>
+                            <li>工具链开发</li>
+                            <li>系统调试与优化</li>
+                            <li>分布式系统设计</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

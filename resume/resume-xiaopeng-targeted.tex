@@ -1,0 +1,225 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{ctex}
+\usepackage{geometry}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% 页面设置
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 标题格式
+\titleformat{\section}
+  {\Large\bfseries\sffamily\raggedright}
+  {}
+  {0em}
+  {}
+  [{\titlerule[0.5pt]}]
+
+\titleformat{\subsection}
+  {\large\bfseries\sffamily}
+  {}
+  {0em}
+  {}
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+\titlespacing{\subsection}{0pt}{6pt}{4pt}
+
+% 列表格式
+\setlist{
+  leftmargin=0pt,
+  itemsep=3pt,
+  parsep=0pt,
+  topsep=3pt,
+  labelsep=8pt
+}
+
+% 超链接设置
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+
+\begin{document}
+
+% 个人信息
+\begin{center}
+  {\Huge\bfseries\sffamily 张凯} \\[6pt]
+  {\large\texttt{Tel.: +86 15122986177} | \texttt{E-Mail: 15122986177@163.com}} \\[6pt]
+  {\large 个人简历} \\[3pt]
+  {\normalsize 基本信息：张凯 | 婚姻状况：已婚 | 出生日期：1992年3月11日 | 毕业时间：2020年10月}
+\end{center}
+
+\vspace{12pt}
+
+\hrule
+\vspace{12pt}
+
+% 核心技能摘要
+\section*{核心技能摘要}
+
+\noindent
+\textbf{\sffamily AUTOSAR AP/CP架构与确定性通信专家} \\
+5年+汽车电子软件开发经验，专注于AUTOSAR架构开发、确定性中间件设计、跨域融合通信架构。精通C++11/14/17、Vector工具链、SOME/IP协议栈、实时系统调度算法。
+
+% 教育信息
+\section*{教育信息}
+
+\noindent
+\textbf{\sffamily 卡尔斯鲁厄理工学院(Karlsruhe Institut für Technologie)（KIT）} \hfill
+\textit{德国工学硕士} \\
+\textbf{2017年4月 – 2020年10月} \\[4pt]
+\textbf{专业：机电一体化及信息技术} \\[4pt]
+\begin{itemize}
+  \item 深化方向1：工业自动化
+  \item 深化方向2：机器人技术
+  \item 毕业设计：用于优化动态眼球追踪系统数据质量的分析方法的设计和验证
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 河北工业大学(211)} \hfill
+\textit{中国工学学士} \\
+\textbf{2012年9月 – 2016年7月} \\[4pt]
+\textbf{本专业：机械设计制造及其自动化} \\[4pt]
+\begin{itemize}
+  \item 毕业设计：人体工程学自动调节座椅（优秀毕业设计）
+\end{itemize}
+
+% 专业实践经验
+\section*{专业实践经验}
+
+\noindent
+\textbf{\sffamily 沃尔沃汽车(Volvo Cars)} \hfill
+\textit{中国上海} \\
+\textbf{2023年11月 – 至今} \\[6pt]
+\textbf{\large AUTOSAR AP/CP架构开发与确定性通信中间件专家} \hfill
+\textit{2023年11月 – 至今}
+
+\textbf{跨域融合软件架构设计与实现：}
+\begin{itemize}
+  \item 基于AUTOSAR Adaptive Platform标准设计SPA3/GPA HI集成架构，满足实时性、确定性、安全性要求
+  \item 开发确定性通信中间件组件，实现关键业务流的QoS保障和确定性传输
+  \item 设计TSN网络流量调度策略，优化ADAS和智驾数据的实时传输性能
+\end{itemize}
+
+\textbf{AUTOSAR工具链配置与代码生成优化：}
+\begin{itemize}
+  \item 创建yaml2arxml工具替代Davinci Developer，实现AUTOSAR配置文件的高效转换
+  \item 开发stakeholder\_build\_template工具，管理SWC配置并自动生成ECUextract和.c/.h框架代码
+  \item 负责AUTOSAR AP/CP工具链维护，确保代码生成、编译、部署流程高效可靠
+  \item 实施ECUExtract\_Unflattened.arxml自动检查，解决Davinci Developer和Configurator配置问题
+\end{itemize}
+
+\textbf{车载以太网及通信协议开发：}
+\begin{itemize}
+  \item 负责SOME/IP服务在Davinci Configurator中的配置、部署和测试验证
+  \item 使用CANoe配合VN5650设备进行车载以太网通信协议测试和性能分析
+  \item 通过PuTTy访问Linux系统，使用劳德巴赫进行确定性通信组件的断点调试
+  \item 实现DDS协议栈集成，支持跨域融合的高效数据交换
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 科世达(上海)机电有限公司，KOSTAL (Shanghai) Mechatronic Co., Ltd.} \hfill
+\textit{中国上海} \\
+\textbf{2020年12月 – 2023年11月}
+
+\vspace{6pt}
+\textbf{\large 嵌入式软件架构师 | 车身域控制器CEM专家} \hfill
+\textit{2020年12月 – 2023年11月}
+
+\textbf{确定性通信架构设计与实现：}
+\begin{itemize}
+  \item 基于AUTOSAR CP架构设计车身域控制器确定性通信方案，满足实时性和安全性要求
+  \item 搭建集成测试软硬件环境，实现确定性调度算法验证和性能测试
+  \item 设计产线终检程序和EMC测试软件，确保通信组件的可靠性
+\end{itemize}
+
+\textbf{Vector工具链深度应用与优化：}
+\begin{itemize}
+  \item 利用Python基于客户CAN/LIN/IO Matrix生成CANoe CAPL脚本和vTESTstudio配置文件
+  \item 构建自动化集成测试平台，实现通信协议的自动化验证和回归测试
+  \item 定位集成测试和系统测试中的通信问题，推动相关工程师完善确定性通信软件
+\end{itemize}
+
+\textbf{跨域融合项目经验：}
+\begin{itemize}
+  \item \textbf{宇通客车} - KBCM车身控制器项目 | 内灯模块通信架构设计 \hfill \textit{2022年8月 – 2023年8月}
+  \item \textbf{长城汽车} - 欧拉好猫系列KBCM项目 | 确定性通信系统集成 \hfill \textit{2022年2月 – 2023年8月}
+  \item \textbf{理想汽车} - 车和家系列KBCM项目 | 跨域通信架构负责人 \hfill \textit{2022年3月 – 2022年10月}
+  \item \textbf{长城汽车} - 欧拉黑猫系列KBCM项目 | BLE/TBOX/VCU/ESCL通信集成 \hfill \textit{2021年1月 – 2021年12月}
+\end{itemize}
+
+% 技术项目经历
+\section*{技术项目经历}
+
+\noindent
+\textbf{\sffamily 硕士论文 | 人体工学研究与商业组织研究所 (KIT)} \hfill
+\textit{2019年8月 – 2020年8月}
+\textbf{动态眼动追踪系统数据质量优化分析方法的设计与验证}
+\begin{itemize}
+  \item 设计实时数据采集系统，收集眼动追踪系统的点云追踪图像数据
+  \item 使用开源目标识别AI模型Mask\_RCNN实现确定性数据处理算法
+  \item 在Python中利用误差空间插值模型实现实时性优化，提升系统确定性性能
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 系统控制实践 | 系统控制研究所 (KIT)} \hfill
+\textit{2018年10月 – 2019年1月}
+\textbf{确定性控制系统设计与实现}
+\begin{itemize}
+  \item \textbf{倒立摆确定性控制：}使用状态空间方法建立确定性系统模型，在MATLAB/SIMULINK中实现实时控制算法
+  \item \textbf{后轴试验台确定性调度：}设计确定性调度算法，实现系统极点补偿和解耦控制，通过传递函数优化PID控制器参数
+\end{itemize}
+
+% 专业技能
+\section*{专业技能}
+
+\textbf{AUTOSAR架构与工具链：}
+\begin{itemize}
+  \item \textbf{AUTOSAR AP/CP：} Adaptive Platform架构、ARA服务、配置管理、代码生成
+  \item \textbf{Vector工具链：} DaVinci Developer\&Configurator、CANoe、vTESTstudio、ECUExtract
+  \item \textbf{确定性通信：} SOME/IP、DDS、CAN FD、车载以太网、TSN协议族
+\end{itemize}
+
+\textbf{编程语言与开发工具：}
+\begin{itemize}
+  \item \textbf{编程语言：} C++11/14/17、Python、Java、Groovy、MATLAB(Stateflow)
+  \item \textbf{系统架构：} 面向对象设计、设计模式、多线程编程、确定性调度算法
+  \item \textbf{调试工具：} iSYSTEM winIDEA、Lauterbach Trace32、CANoe、劳德巴赫
+\end{itemize}
+
+\textbf{通信协议与标准：}
+\begin{itemize}
+  \item \textbf{车载通信：} SOME/IP、DDS、CAN/LIN、车载以太网、TSN协议
+  \item \textbf{系统标准：} POSIX系统、实时性优化、ISO 26262功能安全、ASPICE
+\end{itemize}
+
+\textbf{外语能力：}
+\begin{itemize}
+  \item 英语（雅思：6.5）- 能够阅读英文技术文档和进行技术交流
+  \item 德语（TestDaf：16/C1）- 具备德语工作环境适应能力
+\end{itemize}
+
+% 特别经历和荣誉
+\section*{特别经历和荣誉}
+
+\begin{itemize}
+  \item \textbf{科世达亚洲总部AE电子开发部年会主持人} \hfill \textit{2023年2月16日}
+  \item \textbf{科世达(上海)机电有限公司2022年度优秀员工} \hfill \textit{2022年1月 – 2022年12月}
+  \item \textbf{科世达亚洲总部AE电子开发部技术表彰大会主持人} \hfill \textit{2022年2月28日}
+  \item \textbf{上海市防疫封控期间驻守公司，确保关键项目按时交付} \hfill \textit{2022年3月 – 2022年6月}
+\end{itemize}
+
+\end{document}

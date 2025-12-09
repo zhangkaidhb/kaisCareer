@@ -14,6 +14,8 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{pifont}
+\usepackage{wrapfig}
+\usepackage{float}
 
 % ============ 页面设置 ============
 \geometry{left=1.8cm, right=1.8cm, top=2cm, bottom=2cm}
@@ -76,11 +78,16 @@
 \begin{document}
 
 % ============ 个人信息 ============
-\begin{center}
+\begin{minipage}{0.65\textwidth}
   {\Huge\bfseries\sffamily 张凯} \\[8pt]
   {\large\texttt{电话：+86 15122986177} | \texttt{邮箱：\href{mailto:15122986177@163.com}{15122986177@163.com}}} \\[6pt]
-  {\large\texttt{上海 | 婚姻状况：已婚 | 出生日期：1992年3月11日}} \\[4pt]
-\end{center}
+  {\large\texttt{上海 | 婚姻状况：已婚 | 出生日期：1992年3月11日}}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth,height=3.5cm,keepaspectratio]{profile_photo.jpg}
+\end{minipage}
 
 \vspace{10pt}
 {\color{primary}\hrule}
@@ -90,24 +97,24 @@
 \section*{职业概述}
 
 \normalsize
-5年汽车电子软件开发经验，熟悉汽车电子软件架构开发、确定性通信系统配置、实时网络测试验证。掌握\tech{AUTOSAR CP}架构应用、\tech{TSN}网络基础配置、车载以太网通信测试，具备实际的软件开发和系统集成能力。
+5年汽车嵌入式软件开发经验，熟悉汽车嵌入式软件架构开发、确定性通信系统配置、实时网络测试验证。掌握\tech{AUTOSAR CP}架构应用、\tech{TSN}网络基础配置、车载以太网通信测试，具备实际的工具配置和集成测试经验。
 
 % ============ 关键能力 ============
-\section*{关键能力（汽车软件方向）}
+\section*{关键能力}
 
 \begin{itemize}
   \skillitem{AUTOSAR架构与系统集成}{精通\tech{Classic AUTOSAR}架构，熟悉\tech{Adaptive AUTOSAR}，具备高性能中间计算平台和车身域控制器集成经验，精通车载网络通信（\tech{CAN}/\tech{LIN}/以太网）}
   \skillitem{确定性通信中间件}{主导\tech{SOME/IP}服务配置，深入理解\tech{TSN}协议族（\tech{IEEE802.1AS gPTP}, \tech{802.1Qbv}, \tech{802.1Qav}）及\tech{QoS}保障机制，具备车载以太网通信经验}
-  \skillitem{软件开发能力}{精通\tech{Python}、\tech{MATLAB Stateflow}、\tech{C}编程，具备汽车电子SWC开发经验、\tech{AUTOSAR}架构调试能力和\tech{UML}架构设计能力}
+  \skillitem{软件开发能力}{精通\tech{Python}、\tech{MATLAB Stateflow}、\tech{C}编程，具备汽车嵌入式SWC开发经验、\tech{AUTOSAR}架构能力和基于\tech{UML}语言的架构设计能力}
   \skillitem{工具链与自动化}{精通Vector工具链，具备CI/CD流水线设计和自动化脚本开发经验，熟悉\tech{Linux}环境}
 \end{itemize}
 
 \subsection*{技术技能矩阵}
 
 \begin{tabularx}{\textwidth}{@{}p{3.2cm}X@{}}
-  \textbf{编程语言} & \tech{Python}, \tech{Groovy}, C, \tech{MATLAB(Stateflow)} \\
+  \textbf{编程语言} & \tech{Python}, \tech{Groovy}, \tech{C}, \tech{MATLAB(Stateflow)} \\
   \textbf{Vector工具链} & \tech{DaVinci Developer\&Configurator}, \tech{CANoe}, \tech{vTESTstudio} \\
-  \textbf{CI/CD工具} & \tech{Jenkins}, \tech{Gerrit}, \tech{Gradle}, \tech{MongoDB}, \tech{Groovy}, \tech{Git} \\
+  \textbf{CI/CD工具} & \tech{Jenkins}, \tech{Gerrit}, \tech{Gradle}, \tech{MongoDB}, \tech{Git} \\
   \textbf{调试工具} & \tech{iSYSTEM winIDEA}, \tech{Lauterbach Trace32}
 \end{tabularx}
 
@@ -115,7 +122,7 @@
 \section*{工作经历}
 
 \subsection*{沃尔沃汽车（亚太）投资控股有限公司 Volvo Car (Asia Pacific) Investment Holding Co., Ltd.}
-\textbf{汽车电子软件架构师} \hfill \textit{2023年11月 -- 至今，中国上海}
+\textbf{中央计算平台集成主管工程师} \hfill \textit{2023年11月 -- 至今，中国上海}
 
 \subsubsection*{SPA3/GPA高性能计算平台集成｜AUTOSAR工具链开发负责人}
 \hfill \textit{2023年11月 -- 2025年7月}
@@ -132,7 +139,7 @@
 \hfill \textit{2025年8月 -- 至今}
 
 \begin{itemize}
-  \item[\ding{51}] \highlight{CI/CD流水线架构与脚本开发}：支持设计企业级CI/CD流水线系统，基于\tech{Gerrit-Jenkins-Gradle}技术栈实现代码质量门禁系统，使用\tech{Groovy}语言开发\tech{Jenkins Job}脚本并集成\tech{ktlint, detekt}等静态检查工具和Gradle编译器，确保代码质量合规
+  \item[\ding{51}] \highlight{CI/CD流水线架构与脚本开发}：支持设计企业级CI/CD流水线系统，基于\tech{Gerrit-Jenkins-Gradle}技术栈实现代码质量门禁系统，使用\tech{Groovy}语言开发\tech{Jenkins Job}脚本并集成\tech{ktlint, detekt}等静态检查工具和\tech{Gradle}编译器，确保代码质量合规
   \item[\ding{51}] \highlight{并发架构设计}：设计主从Job并发执行架构，使用多进程并发，提升CI/CD流水线执行效率\textbf{30\%}
   \item[\ding{51}] \highlight{数据管理方案}：基于数据库服务设计检查结果存储和仲裁机制，实现基于\tech{RPC}实现的跨服务器代码检查结果分批记录与集中仲裁，提升门禁系统的灵活性
   \item[\ding{51}] \highlight{可配置化开发}：设计\tech{YAML}配置驱动的测试框架，支持同一个\tech{Jenkins Job}的多版本\tech{pipeline}脚本的动态加载和执行
@@ -167,7 +174,7 @@
 \begin{itemize}
   \item[\ding{108}] \textbf{长城汽车} - 欧拉好猫/黑猫系列\tech{KBCM}项目｜车身域控制器集成负责人
   \begin{itemize}
-    \item 主导AUTOSAR CP架构下的车身控制器集成开发，负责\tech{BLE, TBOX, VCU, ESCL}等安全关键模块的通信集成，符合\tech{ISO 26262}功能安全要求
+    \item 主导\tech{AUTOSAR CP}架构下的车身控制器集成开发，负责\tech{BLE, TBOX, VCU, ESCL}等安全关键模块的通信集成，符合\tech{ISO 26262}功能安全要求
     \item 建立安全关键系统的通信测试验证体系，确保车身域控制器关键模块在\tech{ISO 26262 ASIL-D}等级要求下的功能安全性
   \end{itemize}
 
@@ -183,7 +190,7 @@
 
   \item[\ding{108}] \textbf{宇通客车} - KBCM车身控制器项目｜软件开发工程师
   \begin{itemize}
-    \item 负责商用车车身控制器的内灯模块开发和系统集成
+    \item 负责商用车车身控制器的内灯模块\tech{SWC}开发、单元测试和系统集成
   \end{itemize}
 \end{itemize}
 

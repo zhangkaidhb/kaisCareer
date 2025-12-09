@@ -58,3 +58,9 @@ SOME/IP服务配置和测试
         解决相同Job依据Trigger来源的不同拉取不同版本的pipeline脚本问题
 
         设计测试框架yaml,实现可配置的自动化测试触发
+
+我接触过车载以太网SOME/IP相关配置 配置过Davinci COnfigurator中的SoAd SD和BswM相关部分， TSN我接触过EthTSyn的配置：The Ethernet
+Time Synchronization module implements a protocol for time synchronization over Ethernet. It is developed according to AUTOSAR
+specification which is based on IEEE802.1As ((g)PTP) with some modifications.
+#Ethernet #TimeSync #AVB
+#AUTOSAR， DDS没有在项目中实际接触过 但是了解过其原理

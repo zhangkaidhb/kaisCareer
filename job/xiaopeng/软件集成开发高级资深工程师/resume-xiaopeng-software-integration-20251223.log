@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  23 DEC 2025 22:50
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  23 DEC 2025 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -723,16 +723,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: profile_photo.jpg Graphic file (type bmp)
 <profile_photo.jpg>
 
-Overfull \hbox (21.9pt too wide) in paragraph at lines 121--122
+Overfull \hbox (21.9pt too wide) in paragraph at lines 122--123
 [][] 
  []
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/m/it' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 127.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 128.
 
 
-Overfull \hbox (36.87639pt too wide) in paragraph at lines 133--134
+
+[1
+
+]
+Overfull \hbox (36.87639pt too wide) in paragraph at lines 134--135
 [][]\TU/lmr/bx/n/10.95 AUTOSAR \TU/SimHei(0)/b/n/10.95 工 具 链 开 发 与 集 成[]：|  负 责
  高 性 能 计 算 平 台 的[]\TU/lmtt/m/n/10.95 AUTOSAR CP[]\TU/SimHei(0)/b/n/10.95 架 构 集 
 成，|  主 导 基 于[]\TU/lmtt/m/n/10.95 Python[]\TU/SimHei(0)/b/n/10.95 的[]\TU/lmtt/m/
@@ -740,16 +744,22 @@ n/10.95 yaml2arxml[]\TU/SimHei(0)/b/n/10.95 转
  []
 
 
-
-[1
-
-]
-Overfull \hbox (12.19989pt too wide) in paragraph at lines 134--135
+Overfull \hbox (12.19989pt too wide) in paragraph at lines 135--136
 [][]\TU/lmr/bx/n/10.95 RTE \TU/SimHei(0)/b/n/10.95 代 码 生 成[]：|  负 责[]\TU/lmtt/m
 /n/10.95 Contract Phase Generation[]\TU/SimHei(0)/b/n/10.95 生 成\TU/lmr/m/n/10.9
 5 : []\TU/lmtt/m/n/10.95 SWC[]\TU/SimHei(0)/b/n/10.95 的[]\TU/lmtt/m/n/10.95 C[]
 \TU/SimHei(0)/b/n/10.95 语 言 头 文 件 和[]\TU/lmtt/m/n/10.95 implementation template
 []\TU/lmr/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (19.8755pt too wide) in paragraph at lines 164--165
+[][]\TU/SimHei(0)/b/n/10.95 部 分 \TU/lmr/bx/n/10.95 SWC \TU/SimHei(0)/b/n/10.95 
+开 发[]：|  负 责 车 身 域 控 制 器 的 部 分[]\TU/lmtt/m/n/10.95 SWC[]\TU/SimHei(0)/b/n/10.95
+ 模 块 开 发，|  包 括[]\TU/lmtt/m/n/10.95 Auth[]\TU/SimHei(0)/b/n/10.95 安 全 认 证 模 块 \
+TU/lmr/m/n/10.95 (\TU/SimHei(0)/b/n/10.95 基 于[]\TU/lmtt/m/n/10.95 C[]\TU/SimHei
+(0)/b/n/10.95 语 言\TU/lmr/m/n/10.95 ), []\TU/lmtt/m/n/10.95 NvmManager[]\TU/SimH
+ei(0)/b/n/10.95 模
  []
 
 
@@ -772,10 +782,10 @@ Package rerunfilecheck Info: File `resume-xiaopeng-software-integration-2025122
 Here is how much of TeX's memory you used:
  16428 strings out of 408640
  354203 string characters out of 5749145
- 795610 words of memory out of 5000000
+ 796610 words of memory out of 5000000
  39267 multiletter control sequences out of 15000+600000
  564580 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,111p,1233b,526s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,1233b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on resume-xiaopeng-software-integration-20251223.pdf (3 pages).

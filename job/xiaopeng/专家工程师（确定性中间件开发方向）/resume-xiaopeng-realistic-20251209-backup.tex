@@ -1,0 +1,222 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper]{ctexart}
+
+% ============ 基础包 ============
+\usepackage[margin=2cm]{geometry}
+\usepackage{ctex}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{pifont}
+
+% ============ 页面设置 ============
+\geometry{left=1.8cm, right=1.8cm, top=2cm, bottom=2cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% ============ 颜色定义 ============
+\definecolor{primary}{RGB}{0,82,147}      % 汽车蓝
+\definecolor{secondary}{RGB}{102,102,102} % 灰色
+\definecolor{accent}{RGB}{220,20,60}      % 强调红
+\definecolor{techblue}{RGB}{0,114,188}    % 技术蓝
+\definecolor{lightgray}{RGB}{240,240,240}
+
+% ============ 字体设置（系统字体） ============
+\setCJKmainfont{SimHei}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
+
+% ============ 标题格式 ============
+\titleformat{\section}
+  {\Large\bfseries\sffamily\color{primary}}
+  {}
+  {0em}
+  {}
+  [{\titlerule[0.5pt]\color{primary!30!black}}]
+
+\titleformat{\subsection}
+  {\large\bfseries\sffamily\color{black}}
+  {}
+  {0em}
+  {}
+
+\titlespacing{\section}{0pt}{12pt}{8pt}
+\titlespacing{\subsection}{0pt}{8pt}{6pt}
+
+% ============ 列表设置 ============
+\setlist{
+  leftmargin=0pt,
+  itemsep=3pt,
+  parsep=0pt,
+  topsep=3pt,
+  labelsep=8pt
+}
+
+% ============ 自定义命令 ============
+\newcommand{\highlight}[1]{\textcolor{primary}{\textbf{#1}}}
+\newcommand{\tech}[1]{\textcolor{techblue}{\texttt{#1}}}
+\newcommand{\skillitem}[2]{\item[\ding{108}] \textbf{#1}: #2}
+
+% ============ 超链接设置 ============
+\hypersetup{
+  colorlinks=true,
+  urlcolor=techblue,
+  linkcolor=primary,
+  citecolor=secondary
+}
+
+\begin{document}
+
+% ============ 个人信息 ============
+\begin{center}
+  {\Huge\bfseries\sffamily 张凯} \\[8pt]
+  {\large\texttt{电话：+86 15122986177} | \texttt{邮箱：\href{mailto:15122986177@163.com}{15122986177@163.com}}} \\[6pt]
+  {\large\texttt{上海 | 婚姻状况：已婚 | 出生日期：1992年3月11日}} \\[4pt]
+  {\normalsize\color{secondary}汽车电子软件架构师 | AUTOSAR与确定性系统专家}
+\end{center}
+
+\vspace{10pt}
+{\color{primary}\hrule}
+\vspace{12pt}
+
+% ============ 职业概述 ============
+\section*{职业概述}
+
+\normalsize
+5年汽车电子软件开发经验，专注于跨域融合软件架构设计、确定性中间件开发、实时通信系统。精通AUTOSAR AP/CP架构、TSN网络调度、车载以太网通信中间件，具备从架构设计到实际部署的全栈开发能力。
+
+% ============ 关键能力 ============
+\section*{关键能力（汽车软件方向）}
+
+\begin{itemize}
+  \skillitem{AUTOSAR架构与系统集成}{精通AUTOSAR CP架构，熟悉Adaptive AUTOSAR，具备HPC平台和车身域控制器集成经验，精通车载网络通信（CAN/LIN/以太网）}
+  \skillitem{确定性通信中间件}{主导SOME/IP服务配置，深入理解TSN协议族（IEEE802.1AS gPTP, 802.1Qbv, 802.1Qav）及QoS保障机制，具备车载以太网通信经验}
+  \skillitem{软件开发能力}{精通Python、MATLAB Stateflow、C编程，具备汽车电子SWC开发经验、AUTOSAR架构调试能力和UML架构设计能力}
+  \skillitem{工具链与自动化}{精通Vector工具链，具备CI/CD流水线设计和自动化脚本开发经验，熟悉Linux环境}
+\end{itemize}
+
+\subsection*{技术技能矩阵}
+
+\begin{tabularx}{\textwidth}{@{}p{3.2cm}X@{}}
+  \textbf{编程语言} & Python, Groovy, C, MATLAB(Stateflow) \\
+  \textbf{Vector工具链} & DaVinci Developer\&Configurator, CANoe, vTESTstudio \\
+  \textbf{CI/CD工具} & Jenkins, Gerrit, Gradle, MongoDB, Groovy脚本, Git \\
+  \textbf{调试工具} & iSYSTEM winIDEA, Lauterbach Trace32
+\end{tabularx}
+
+% ============ 工作经历 ============
+\section*{工作经历}
+
+\subsection*{沃尔沃汽车（亚太）投资控股有限公司 Volvo Car (Asia Pacific) Investment Holding Co., Ltd.}
+\textbf{汽车电子软件架构师} \hfill \textit{2023年11月 -- 至今，中国上海}
+
+\subsubsection*{SPA3/GPA高性能计算平台集成｜AUTOSAR工具链开发负责人}
+\hfill \textit{2023年11月 -- 2025年7月}
+
+\begin{itemize}
+  \item[\ding{51}] \highlight{AUTOSAR工具链开发与集成}：负责高性能计算平台的AUTOSAR CP架构集成，主导yaml2arxml转换工具和SWC配置管理工具开发，实现从yaml脚本配置文件到ARXML和代码的全流程分布式管理自动化，替代Davinci Developer核心功能，显著提升综合配置效率
+  \item[\ding{51}] \highlight{ARXML文件处理与合规检查}：负责ECUExtract的合规检查和错误修复，确保AUTOSAR架构一致性和配置文件的完整性
+  \item[\ding{51}] \highlight{车载以太网中间件配置}：主导\tech{SOME/IP}服务在Davinci Configurator中的完整配置流程，包含\tech{SoAd, SD, BswM, EcuC, ComM, PduR}等模块配置，负责\tech{EthTSyn}模块的\tech{IEEE802.1AS(gPTP)}时间同步配置，确保服务正确部署和确定性通信保障
+  \item[\ding{51}] \highlight{通信验证与测试}：使用\tech{CANoe}配合\tech{VN5650}进行SOME/IP服务通信测试，验证车载以太网通信机制和时序要求
+  \item[\ding{51}] \highlight{系统调试与部署}：通过Linux环境配置和劳德巴赫调试器进行C代码级调试，保障系统集成稳定性
+\end{itemize}
+
+\subsubsection*{CI/CD架构与工具链开发｜流水线设计负责人}
+\hfill \textit{2025年8月 -- 至今}
+
+\begin{itemize}
+  \item[\ding{51}] \highlight{CI/CD流水线架构与脚本开发}：支持设计企业级CI/CD流水线系统，基于\tech{Gerrit-Jenkins-Gradle}技术栈实现代码质量门禁系统，使用Groovy语言开发Jenkins Job脚本并集成\tech{ktlint, detekt}等静态检查工具和Gradle编译器，确保代码质量合规
+  \item[\ding{51}] \highlight{并发架构设计}：设计主从Job并发执行架构，使用多进程并发，提升CI/CD流水线执行效率\textbf{30\%}
+  \item[\ding{51}] \highlight{数据管理方案}：基于数据库服务设计检查结果存储和仲裁机制，实现基于RPC实现的跨服务器代码检查结果分批记录与集中仲裁，提升门禁系统的灵活性
+  \item[\ding{51}] \highlight{可配置化开发}：设计YAML配置驱动的测试框架，支持同一个Jenkins Job的多版本pipeline脚本的动态加载和执行
+\end{itemize}
+
+\subsection*{科世达(上海)机电有限公司 KOSTAL (Shanghai) Mechatronic Co., Ltd.}
+\textbf{车身域控制器开发工程师} \hfill \textit{2020年12月 -- 2023年11月，中国上海}
+
+\subsubsection*{科世达车身域控制器CEM项目｜AUTOSAR集成与中间件开发负责人}
+\hfill \textit{2022年12月 -- 2023年11月}
+
+\begin{itemize}
+  \item[\ding{51}] \highlight{AUTOSAR架构集成}：负责车身域控制器的\tech{AUTOSAR CP}架构集成，主导SWC间通信配置和中间件组件集成
+  \item[\ding{51}] \highlight{系统级调试与部署}：建立完整的编译-烧录-测试流程，负责软件集成测试和系统级问题定位，确保系统稳定性
+  \item[\ding{51}] \highlight{测试工具链开发}：设计产线终检程序和EMC测试上位机软件，构建自动化测试框架提升测试效率
+  \item[\ding{51}] \highlight{跨团队技术协调}：作为技术接口人推动软件问题解决，确保项目按时交付和后期维护支持
+\end{itemize}
+
+\subsubsection*{车载网络自动化测试平台开发｜Vector工具链专家}
+\hfill \textit{2023年1月 -- 2023年6月}
+
+\begin{itemize}
+  \item[\ding{51}] \highlight{自动化工具链开发}：基于\tech{Python}开发自动化测试脚本生成工具，根据客户通信矩阵生成\tech{CANoe CAPL}脚本和\tech{vTESTstudio}配置
+  \item[\ding{51}] \highlight{通信协议测试验证}：针对CAN/LIN/以太网通信协议设计测试用例，验证车载网络通信的可靠性和实时性
+  \item[\ding{51}] \highlight{测试工程构建}：构建完整的vTESTstudio自动化测试工程，实现从测试用例设计到执行的全流程自动化
+  \item[\ding{51}] \highlight{测试技术推广}：在团队内推广自动化测试方法论，提升团队测试效率和质量保证能力
+\end{itemize}
+
+\subsubsection*{AUTOSAR车身控制器项目经验}
+\hfill \textit{2021年1月 -- 2023年8月}
+
+\begin{itemize}
+  \item[\ding{108}] \textbf{长城汽车} - 欧拉好猫/黑猫系列KBCM项目｜车身域控制器集成负责人
+  \begin{itemize}
+    \item 主导AUTOSAR CP架构下的车身控制器集成开发，负责\tech{BLE, TBOX, VCU, ESCL}等安全关键模块的通信集成，符合\tech{ISO 26262}功能安全要求
+    \item 建立安全关键系统的通信测试验证体系，确保车身域控制器在ASIL等级要求下的功能安全性
+  \end{itemize}
+
+  \item[\ding{108}] \textbf{理想汽车} - 车和家系列KBCM项目｜集成开发负责人
+  \begin{itemize}
+    \item 负责新能源汽车车身控制器的AUTOSAR架构集成和功能安全验证
+  \end{itemize}
+
+  \item[\ding{108}] \textbf{江西五十铃} - PEPS无钥匙进入系统｜集成开发负责人
+  \begin{itemize}
+    \item 主导车辆防盗安全系统的通信协议集成和测试验证，确保PEPS系统满足\tech{ISO 26262 ASIL-B}功能安全等级要求
+  \end{itemize}
+
+  \item[\ding{108}] \textbf{宇通客车} - KBCM车身控制器项目｜软件开发工程师
+  \begin{itemize}
+    \item 负责商用车车身控制器的内灯模块开发和系统集成
+  \end{itemize}
+\end{itemize}
+
+% ============ 教育背景 ============
+\section*{教育背景}
+
+\begin{itemize}
+  \item \textbf{德国卡尔斯鲁厄理工学院(KIT)} \hfill
+    \textit{机电一体化及信息技术硕士} \hfill
+    \textit{2017.04 -- 2020.10}
+  \begin{itemize}
+    \item 深化方向：工业自动化、机器人技术
+    \item 优秀毕业设计：基于Python和深度学习的动态眼球追踪系统数据质量优化
+  \end{itemize}
+
+  \item \textbf{河北工业大学(211)} \hfill
+    \textit{机械设计制造及其自动化学士} \hfill
+    \textit{2012年9月 -- 2016年7月}
+  \begin{itemize}
+    \item 优秀毕业设计：人体工程学自动调节座椅
+  \end{itemize}
+\end{itemize}
+
+% ============ 证书与其他 ============
+\section*{证书与其他}
+
+\begin{itemize}
+  \item \textbf{外语能力}：英语（雅思：6.5），德语（TestDaf：16/C1）
+  \item \textbf{爱好特长}：中长跑、硬笔书法、无动力帆船
+  \item \textbf{科世达2022年度优秀员工}
+  \item \textbf{科世达AE电子开发部年会主持人（2次）}
+  \item \textbf{上海防疫期间驻守公司保障项目交付}
+\end{itemize}
+
+\end{document}

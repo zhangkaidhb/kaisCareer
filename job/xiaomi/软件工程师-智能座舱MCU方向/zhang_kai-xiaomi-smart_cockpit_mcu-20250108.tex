@@ -1,0 +1,223 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper]{ctexart}
+
+% ============ 基础包 ============
+\usepackage[margin=2cm]{geometry}
+\usepackage{ctex}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{pifont}
+\usepackage{wrapfig}
+\usepackage{float}
+
+% ============ 页面设置 ============
+\geometry{left=1.8cm, right=1.8cm, top=2cm, bottom=2cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% ============ 颜色定义 ============
+\definecolor{primary}{RGB}{0,82,147}      % 汽车蓝
+\definecolor{secondary}{RGB}{102,102,102} % 灰色
+\definecolor{accent}{RGB}{220,20,60}      % 强调红
+\definecolor{techblue}{RGB}{0,114,188}    % 技术蓝
+\definecolor{lightgray}{RGB}{240,240,240}
+
+% ============ 字体设置（系统字体） ============
+\setCJKmainfont{SimHei}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
+
+% ============ 标题格式 ============
+\titleformat{\section}
+  {\Large\bfseries\sffamily\color{primary}}
+  {}
+  {0em}
+  {}
+  [{\titlerule[0.5pt]\color{primary!30!black}}]
+
+\titleformat{\subsection}
+  {\large\bfseries\sffamily\color{black}}
+  {}
+  {0em}
+  {}
+
+\titlespacing{\section}{0pt}{12pt}{8pt}
+\titlespacing{\subsection}{0pt}{8pt}{6pt}
+
+% ============ 列表设置 ============
+\setlist{
+  leftmargin=0pt,
+  itemsep=3pt,
+  parsep=0pt,
+  topsep=3pt,
+  labelsep=8pt
+}
+
+% ============ 自定义命令 ============
+\newcommand{\highlight}[1]{\textcolor{primary}{\textbf{#1}}}
+\newcommand{\tech}[1]{\textcolor{techblue}{\texttt{#1}}}
+\newcommand{\skillitem}[2]{\item[\ding{108}] \textbf{#1}: #2}
+
+% ============ 超链接设置 ============
+\hypersetup{
+  colorlinks=true,
+  urlcolor=techblue,
+  linkcolor=primary,
+  citecolor=secondary
+}
+
+\begin{document}
+
+% ============ 个人信息 ============
+\begin{minipage}{0.65\textwidth}
+  {\Huge\bfseries\sffamily 张凯} \\[8pt]
+  {\large\texttt{电话：+86 15122986177} | \texttt{邮箱：\href{mailto:15122986177@163.com}{15122986177@163.com}}} \\[6pt]
+  {\large\texttt{上海 | 婚姻状况：已婚 | 出生日期：1992年3月11日}}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth,height=3.5cm,keepaspectratio]{profile_photo.jpg}
+\end{minipage}
+
+\vspace{10pt}
+{\color{primary}\hrule}
+\vspace{12pt}
+
+% ============ 职业概述 ============
+\section*{职业概述}
+
+\normalsize
+5年以上\tech{AUTOSAR}软件开发经验，擅长智能座舱\tech{MCU}软件架构设计与应用层开发，精通\tech{SWC}(\tech{Runnable})、\tech{CDD}复杂驱动开发及\tech{BSW}基础软件配置集成，具备高性能中央计算平台（\tech{HI}基于Infineon TC397）和车身域控制器集成经验，熟练使用\tech{Vector DaVinci}工具链，熟悉\tech{CAN}、\tech{UDS}、\tech{NM}、\tech{DoIP}等座舱通信协议。
+
+% ============ 关键能力 ============
+\section*{关键能力}
+
+\begin{itemize}
+  \skillitem{智能座舱MCU架构}{精通智能座舱\tech{MCU}软件架构设计，熟悉\tech{AUTOSAR SWC}应用层开发（\tech{Runnable}实体、\tech{Data Type}、\tech{Interface}定义），具备复杂驱动\tech{CDD}开发经验，能够进行\tech{RTE}接口配置和代码生成}
+  \skillitem{AUTOSAR基础软件配置}{熟练掌握\tech{AUTOSAR BSW}标准模块配置，包括通信（\tech{CAN, LIN, Eth}）、诊断（\tech{UDS on CAN/DoIP}）、存储（\tech{NVM}）、模式管理（\tech{Mode Management}）、网络管理（\tech{NM}）等核心功能模块}
+  \skillitem{Vector DaVinci工具链}{精通\tech{DaVinci Developer}进行\tech{SWC}应用层开发和\tech{RTE}配置，熟练使用\tech{DaVinci Configurator}进行\tech{BSW}模块配置和代码生成，掌握\tech{ECUExtract}合规检查和\tech{ARXML}文件管理}
+  \skillitem{座舱通信协议}{精通\tech{CAN}总线通信协议，熟悉\tech{UDS}诊断协议（\tech{ISO 14229}、\tech{ISO 15765}）、\tech{NM}网络管理（\tech{OSEK/AUTOSAR NM}）、\tech{DoIP}(\tech{UDS on Ethernet})等座舱常用协议栈}
+  \skillitem{工具链开发与自动化}{精通\tech{Python}脚本开发，主导\tech{yaml2arxml}转换工具和\tech{SWC}配置管理工具开发，具备自动化测试平台开发经验}
+  \skillitem{系统集成与调试}{熟练使用\tech{Lauterbach Trace32}、\tech{iSYSTEM winIDEA}进行\tech{C}代码级调试，具备软件集成测试和系统级问题定位能力}
+\end{itemize}
+
+\subsection*{技术技能矩阵}
+
+\begin{tabularx}{\textwidth}{@{}p{3.2cm}X@{}}
+  \textbf{AUTOSAR开发} & \tech{SWC应用层开发}, \tech{CDD复杂驱动}, \tech{BSW配置集成}, \tech{RTE接口连接}, \tech{OS时序挂载} \\
+  \textbf{Vector工具链} & \tech{DaVinci Developer}, \tech{DaVinci Configurator}, \tech{CANoe}, \tech{vTESTstudio} \\
+  \textbf{座舱协议} & \tech{CAN}, \tech{UDS}, \tech{NM(OSEK/AUTOSAR)}, \tech{DoIP}, \tech{LIN} \\
+  \textbf{编程语言} & \tech{C}, \tech{Python}, \tech{MATLAB Stateflow} \\
+  \textbf{调试工具} & \tech{Lauterbach Trace32}, \tech{iSYSTEM winIDEA}, \tech{CANoe}
+\end{tabularx}
+
+% ============ 工作经历 ============
+\section*{工作经历}
+
+\subsection*{沃尔沃汽车（亚太）投资控股有限公司 Volvo Car (Asia Pacific) Investment Holding Co., Ltd.}
+\textbf{中央计算平台集成主管工程师} \hfill \textit{2023年11月 -- 至今，中国上海}
+
+\subsubsection*{SPA3/GPA高性能计算平台集成｜智能座舱MCU集成负责人}
+\hfill \textit{2023年11月 -- 2025年7月}
+
+\begin{itemize}
+  \item[\ding{51}] \highlight{智能座舱MCU软件架构集成}：负责高性能计算平台\tech{HI}(基于Infineon TC397)的智能座舱\tech{MCU}软件架构集成，主导\tech{AUTOSAR CP}架构下的\tech{SWC}应用层开发和\tech{BSW}基础软件配置，涵盖座舱域控制、车身控制、网络管理等核心功能
+  \item[\ding{51}] \highlight{SWC应用层开发与配置}：使用\tech{DaVinci Developer}进行\tech{SWC}应用层开发，负责\tech{Runnable}实体设计、\tech{Data Type}定义、\tech{Sender-Receiver}和\tech{Client-Server}接口配置，主导\tech{RTE}接口连接和代码生成，实现座舱功能的模块化设计
+  \item[\ding{51}] \highlight{CDD复杂驱动开发}：负责座舱特定硬件的\tech{CDD}(\tech{Complex Device Driver})开发，包括\tech{IoHwAb}(\tech{IO Hardware Abstraction})模块、\tech{Auth}安全认证模块、\tech{NvmManager}存储管理模块等基于\tech{C}语言的底层驱动开发
+  \item[\ding{51}] \highlight{BSW基础软件配置}：使用\tech{DaVinci Configurator}进行\tech{BSW}标准模块配置，包括\tech{CAN}通信（\tech{CanIf, CanTp, PduR}）、\tech{UDS}诊断（\tech{DEM, Dcm, UDSTp}）、\tech{NVM}存储（\tech{NvM, MemIf, Fee}）、\tech{NM}网络管理、\tech{ComM}通信管理等核心功能模块
+  \item[\ding{51}] \highlight{工具链开发与自动化}：主导基于\tech{Python}的\tech{yaml2arxml}转换工具和\tech{SWC}配置管理工具开发，实现从\tech{yaml}脚本配置文件到\tech{ARXML}和代码的全流程分布式管理自动化，替代\tech{Davinci Developer}核心功能，显著提升配置效率
+  \item[\ding{51}] \highlight{DoIP诊断配置}：负责\tech{DoIP}(\tech{UDS on Ethernet})诊断协议配置，在\tech{Davinci Configurator}中完成\tech{SoAd}、\tech{DoIP}模块配置，支持智能座舱的以太网诊断功能
+  \item[\ding{51}] \highlight{系统调试与验证}：使用\tech{CANoe}进行座舱\tech{CAN/LIN}通信测试，配合\tech{Lauterbach}调试器进行\tech{C}代码级调试，验证\tech{SWC}功能正确性和\tech{BSW}模块配置正确性，保障智能座舱\tech{MCU}软件的系统稳定性
+\end{itemize}
+
+\subsubsection*{CI/CD架构与工具链开发｜流水线设计开发者}
+\hfill \textit{2025年8月 -- 至今}
+
+\begin{itemize}
+  \item[\ding{51}] \highlight{CI/CD流水线架构与脚本开发}：设计企业级\tech{CI/CD}流水线系统，基于\tech{Jenkins-Gerrit}技术栈实现代码质量门禁系统，开发\tech{Groovy}脚本并集成静态检查工具，确保代码质量合规
+  \item[\ding{51}] \highlight{并发架构设计}：设计主从\tech{Job}并发执行架构，使用多进程并发，提升\tech{CI/CD}流水线执行效率\textbf{30\%}
+  \item[\ding{51}] \highlight{可配置化开发}：设计\tech{YAML}配置驱动的测试框架，支持同一个\tech{Jenkins Job}的多版本\tech{pipeline}脚本的动态加载和执行
+\end{itemize}
+
+\subsection*{科世达(上海)机电有限公司 KOSTAL (Shanghai) Mechatronic Co., Ltd.}
+\textbf{车身域控制器开发工程师} \hfill \textit{2020年12月 -- 2023年11月，中国上海}
+
+\subsubsection*{车身域控制器集成负责人}
+\hfill \textit{2020年12月 -- 2023年11月}
+
+\begin{itemize}
+  \item[\ding{51}] \highlight{AUTOSAR架构集成}：负责车身域控制器的\tech{AUTOSAR CP}架构集成，主导\tech{SWC}间\tech{RTE}接口设计和连接、\tech{OS}时序挂载和基础软件组件集成，确保软件架构和接口连接符合\tech{SWC}功能需求
+  \item[\ding{51}] \highlight{SWC模块开发}：负责车身域控制器的部分\tech{SWC}模块开发，包括\tech{Auth}安全认证模块（基于\tech{C}语言）、\tech{NvmManager}模块（基于\tech{C}语言）、\tech{IoHwAb}模块（基于\tech{C}语言）、内灯模块（基于\tech{MATLAB Stateflow}）
+  \item[\ding{51}] \highlight{软件集成与发布}：进行完整的编译、烧录、测试流程，负责软件集成测试和系统级问题定位，建立软件版本与需求关系管理，确保软件符合功能需求
+  \item[\ding{51}] \highlight{质量管控与问题跟踪}：作为技术接口人协调多个团队，推动产品问题解决，建立质量问题分派和跟踪机制，确保项目按时交付
+  \item[\ding{51}] \highlight{自动化测试工具开发}：基于\tech{Python}开发自动化测试脚本生成工具，根据客户通信矩阵生成\tech{CANoe CAPL}脚本和\tech{vTESTstudio}配置，构建自动化测试框架提升集成测试效率
+\end{itemize}
+
+\subsubsection*{AUTOSAR车身控制器项目经验}
+\hfill \textit{2021年1月 -- 2023年8月}
+
+\begin{itemize}
+  \item[\ding{108}] \textbf{长城汽车} - 欧拉好猫/黑猫系列\tech{KBCM}项目｜车身域控制器集成负责人
+  \begin{itemize}
+    \item 主导\tech{AUTOSAR CP}架构下的车身控制器集成开发，负责\tech{BLE, TBOX, VCU, ESCL}等安全关键模块的通信集成，符合\tech{ISO 26262}功能安全要求
+    \item 建立安全关键系统的通信测试验证体系，确保车身域控制器关键模块在\tech{ISO 26262 ASIL-D}等级要求下的功能安全性
+  \end{itemize}
+
+  \item[\ding{108}] \textbf{理想汽车} - 车和家系列\tech{KBCM}项目｜集成开发负责人
+  \begin{itemize}
+    \item 负责新能源汽车车身控制器的\tech{AUTOSAR}架构集成和功能安全验证
+  \end{itemize}
+
+  \item[\ding{108}] \textbf{江西五十铃} - \tech{PEPS}无钥匙进入系统｜集成开发负责人
+  \begin{itemize}
+    \item 主导车辆防盗安全系统的通信协议集成和测试验证，确保\tech{PEPS}系统满足\tech{ISO 26262 ASIL-B}功能安全等级要求
+  \end{itemize}
+
+  \item[\ding{108}] \textbf{宇通客车} - \tech{KBCM}车身控制器项目｜软件开发工程师
+  \begin{itemize}
+    \item 负责商用车车身控制器的内灯模块\tech{SWC}开发、单元测试和系统集成
+  \end{itemize}
+\end{itemize}
+
+% ============ 教育背景 ============
+\section*{教育背景}
+
+\begin{itemize}
+  \item \textbf{德国卡尔斯鲁厄理工学院(KIT)} \hfill
+    \textit{机电一体化及信息技术硕士} \hfill
+    \textit{2017.04 -- 2020.10}
+  \begin{itemize}
+    \item 深化方向：工业自动化、机器人技术
+    \item 优秀毕业设计：基于\tech{Python}和深度学习的动态眼球追踪系统数据质量优化
+  \end{itemize}
+
+  \item \textbf{河北工业大学(211)} \hfill
+    \textit{机械设计制造及其自动化学士} \hfill
+    \textit{2012年9月 -- 2016年7月}
+  \begin{itemize}
+    \item 优秀毕业设计：人体工程学自动调节座椅
+  \end{itemize}
+\end{itemize}
+
+% ============ 证书与其他 ============
+\section*{证书与其他}
+
+\begin{itemize}
+  \item \textbf{外语能力}：英语（雅思：6.5），德语（TestDaf：16/C1）
+  \item \textbf{爱好特长}：中长跑、硬笔书法、无动力帆船
+  \item \textbf{科世达2022年度优秀员工}
+  \item \textbf{科世达AE电子开发部颁奖大会(2022)及年会(2023)主持人}
+  \item \textbf{上海防疫期间驻守公司保障项目交付}
+\end{itemize}
+
+\end{document}

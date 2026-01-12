@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  8 JAN 2026 22:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  12 JAN 2026 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,36 +722,28 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: profile_photo.jpg Graphic file (type bmp)
 <profile_photo.jpg>
 
-Overfull \hbox (1.17198pt too wide) in paragraph at lines 107--108
-[]\TU/SimHei(0)/b/n/10.95 通 信 协 议 栈\TU/lmr/m/n/10.95 : \TU/SimHei(0)/b/n/10.95 
-熟 练 掌 握[]\TU/lmtt/m/n/10.95 CAN[] |\TU/SimHei(0)/b/n/10.95 （[]\TU/lmtt/m/n/10.9
-5 Classic CAN, CAN-FD[]\TU/SimHei(0)/b/n/10.95 ） 、| []\TU/lmtt/m/n/10.95 LIN[]\
-TU/SimHei(0)/b/n/10.95 总 线 通 信 协 议 栈 配 置，|  熟 悉 车 载 以 太 网  |（[]\TU/lmtt/m/n/10.
-95 SOME/IP,
- []
-
-
-Overfull \hbox (21.9pt too wide) in paragraph at lines 122--123
+Overfull \hbox (21.9pt too wide) in paragraph at lines 118--119
 [][] 
  []
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/m/it' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 128.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 124.
+
+
+Overfull \hbox (5.96158pt too wide) in paragraph at lines 130--131
+[][]\TU/SimHei(0)/b/n/10.95 集 成 工 具 开 发[]：|  负 责[]\TU/lmtt/m/n/10.95 SPA3/GPA[]
+\TU/SimHei(0)/b/n/10.95 项 目 工 具 开 发，|  使 用[]\TU/lmtt/m/n/10.95 Python[]\TU/SimH
+ei(0)/b/n/10.95 开 发[]\TU/lmtt/m/n/10.95 yaml2arxml[]\TU/SimHei(0)/b/n/10.95 管 理
+[]\TU/lmtt/m/n/10.95 SWC[]\TU/SimHei(0)/b/n/10.95 配 置，|  生 成[]\TU/lmtt/m/n/10.9
+5 ECUExtract[]\TU/SimHei(0)/b/n/10.95 和
+ []
 
 
 
 [1
 
 ]
-Overfull \hbox (5.14331pt too wide) in paragraph at lines 161--162
-[][]\TU/lmr/bx/n/10.95 CDD \TU/SimHei(0)/b/n/10.95 复 杂 驱 动 开 发[]：|  负 责 车 身 域 控
- 制 器 的[]\TU/lmtt/m/n/10.95 CDD[]\TU/lmr/m/n/10.95 ([]\TU/lmtt/m/n/10.95 Complex
- Device Driver[]\TU/lmr/m/n/10.95 ) \TU/SimHei(0)/b/n/10.95 开 发，|  包 括[]\TU/lmt
-t/m/n/10.95 IoHwAb[]\TU/lmr/m/n/10.95 ([]\TU/lmtt/m/n/10.95 IO Hardware
- []
-
-
 
 [2]
 
@@ -769,12 +761,12 @@ Package rerunfilecheck Info: File `zhang_kai-jike-mcu_bsw-20250108.out' has not
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16438 strings out of 408640
- 354541 string characters out of 5749145
- 794540 words of memory out of 5000000
- 39277 multiletter control sequences out of 15000+600000
- 564580 words of font info for 89 fonts, out of 8000000 for 9000
+ 16431 strings out of 408640
+ 354012 string characters out of 5749145
+ 790540 words of memory out of 5000000
+ 39269 multiletter control sequences out of 15000+600000
+ 564588 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1219b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,1219b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on zhang_kai-jike-mcu_bsw-20250108.pdf (3 pages).

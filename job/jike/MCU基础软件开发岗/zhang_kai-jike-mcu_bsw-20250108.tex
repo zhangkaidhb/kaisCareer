@@ -97,16 +97,17 @@
 \section*{职业概述}
 
 \normalsize
-5年\tech{AUTOSAR}软件开发经验，负责\tech{AUTOSAR BSW}模块配置，包括\tech{SOME/IP}服务配置、诊断（\tech{UDS}）等核心模块配置，具备车身域控制器集成开发和量产经验以及中央网关计算平台集成开发经验。
+5年\tech{AUTOSAR}软件开发经验，负责\tech{SOME/IP}服务配置（\tech{SoAd}、\tech{SD}、\tech{PduR}等），具备车身域控制器和中央网关计算平台集成开发经验。
 
 % ============ 关键能力 ============
 \section*{关键能力}
 
 \begin{itemize}
-  \skillitem{诊断配置}{负责\tech{UDS}诊断协议栈配置，完成\tech{Dcm}诊断通信管理、\tech{Dem}故障事件管理配置}
+  \skillitem{Vector工具链}{熟练使用\tech{Vector DaVinci Developer}、\tech{DaVinci Configurator}进行\tech{AUTOSAR}相关配置和代码生成，解决\tech{ARXML}配置冲突和兼容性问题}
   \skillitem{SOME/IP配置}{负责车载以太网\tech{SOME/IP}相关模块配置，包括\tech{SoAd}传输层、\tech{SD}服务发现、\tech{PduR}路由和\tech{TCP/UDP}配置}
-  \skillitem{Vector工具链}{熟练使用\tech{Vector DaVinci Developer}、\tech{DaVinci Configurator}进行\tech{AUTOSAR BSW}模块配置和代码生成，解决\tech{ARXML}配置冲突和兼容性问题}
+  \skillitem{OS时序挂载与优化}{熟悉\tech{AUTOSAR OS}时序挂载和任务调度机制，能够根据系统需求优化任务优先级和调度策略，提升系统响应速度和稳定性}
   \skillitem{调试与问题定位}{熟练使用\tech{Lauterbach Trace32}、\tech{iSYSTEM winIDEA}进行\tech{C}代码级调试，具备量产软件问题定位和系统级问题排查能力}
+  \skillitem{自动化测试开发}{基于\tech{Python}开发自动化测试工具，根据客户\tech{CAN/LIN/IO}矩阵自动生成\tech{CANoe CAPL}脚本和\tech{vTESTstudio}配置}
 \end{itemize}
 
 \subsection*{技术技能矩阵}
@@ -126,14 +127,9 @@
 \hfill \textit{2023年11月 -- 2025年7月}
 
 \begin{itemize}
-  \item[\ding{51}] \highlight{AUTOSAR BSW模块配置}：负责高性能计算平台\tech{HI}(基于Infineon TC397)的\tech{AUTOSAR BSW}基础软件模块配置，包括通信（\tech{CanIf, CanTp, PduR, ComM}）、诊断（\tech{Dem, Dcm}）、存储（\tech{NvM, MemIf}）等核心功能模块配置
-  \item[\ding{51}] \highlight{通信协议栈配置}：主导\tech{CAN/CAN-FD}通信协议栈配置，负责\tech{CanIf}接口层、\tech{CanTp}传输层、\tech{PduR}路由层配置，设计\tech{TP}映射关系和\tech{Pdu}路由路径，支持车身域控制、动力域控制、底盘域控制等跨域通信需求
-  \item[\ding{51}] \highlight{SOME/IP配置}：负责车载以太网\tech{SOME/IP}相关模块配置，包括\tech{SoAd}传输层、\tech{SD}服务发现、\tech{PduR}路由和\tech{TCP/UDP}配置，使用\tech{Davinci Configurator}完成配置和代码生成
-  \item[\ding{51}] \highlight{诊断配置}：负责\tech{UDS}诊断协议栈配置，完成\tech{Dcm}诊断通信管理、\tech{Dem}故障事件管理配置
-  \item[\ding{51}] \highlight{存储管理与NVM配置}：负责\tech{NVM}非易失性存储管理配置，设计\tech{NvM}块管理策略、\tech{MemIf}抽象接口配置，支持用户数据、\tech{DID}数据、\tech{ adaptation parameter}等数据的持久化存储
-  \item[\ding{51}] \highlight{MCAL配置与芯片初始化}：参与\tech{MCAL}层配置，包括\tech{Dio}（\tech{Digital IO}）、\tech{Port}、\tech{GPT}（\tech{General Purpose Timer}）、\tech{ICU}（\tech{Input Capture Unit}）等外设驱动配置，完成\tech{Tricore}芯片级初始化和时钟树配置
-  \item[\ding{51}] \highlight{ARXML配置管理}：使用\tech{Davinci Configurator}进行\tech{BSW}模块配置，负责\tech{ARXML}文件管理、\tech{ECUExtract}合规检查和错误修复，解决\tech{BSW}模块间配置冲突和兼容性问题
-  \item[\ding{51}] \highlight{工具链开发}：主导基于\tech{Python}的\tech{yaml2arxml}转换工具和\tech{SWC}配置管理工具开发，实现\tech{AUTOSAR}配置文件的全流程自动化管理，补充\tech{Davinci Developer}配置功能
+  \item[\ding{51}] \highlight{集成工具开发}：负责\tech{SPA3/GPA}项目工具开发，使用\tech{Python}开发\tech{yaml2arxml}管理\tech{SWC}配置，生成\tech{ECUExtract}和代码
+  \item[\ding{51}] \highlight{配置验证与消错}：负责\tech{ECUExtract.arxml}配置检查，完成\tech{Davinci Developer}和\tech{Configurator}配置消错，解决配置冲突问题
+  \item[\ding{51}] \highlight{SOME/IP配置与测试}：负责\tech{SOME/IP}服务配置（\tech{SoAd}、\tech{SD}、\tech{BswM}），使用\tech{CANoe}配合\tech{VN5650}测试，使用\tech{劳德巴赫}调试\tech{C代码}
 \end{itemize}
 
 \subsubsection*{CI/CD架构与工具链开发｜流水线设计开发者}
@@ -152,37 +148,36 @@
 \hfill \textit{2020年12月 -- 2023年11月}
 
 \begin{itemize}
-  \item[\ding{51}] \highlight{车身域控制器BSW配置}：负责车身域控制器的\tech{AUTOSAR BSW}基础软件配置，主导\tech{CAN/LIN}通信协议栈配置、\tech{UDS}诊断配置、\tech{NVM}存储管理配置，完成多个量产项目的\tech{BSW}模块配置和验证
-  \item[\ding{51}] \highlight{CDD复杂驱动开发}：负责车身域控制器的\tech{CDD}(\tech{Complex Device Driver})开发，包括\tech{IoHwAb}(\tech{IO Hardware Abstraction})模块、\tech{Auth}安全认证模块、\tech{NvmManager}存储管理模块等基于\tech{C}语言的底层驱动开发
-  \item[\ding{51}] \highlight{量产项目经验}：作为集成开发负责人，参与长城汽车欧拉系列、理想汽车、江西五十铃等多个\tech{OEM}量产项目的车身域控制器\tech{BSW}集成和软件发布，具备完整的量产经验
-  \item[\ding{51}] \highlight{软件集成与发布}：进行完整的编译、烧录、测试流程，负责软件集成测试和系统级问题定位，建立软件版本与需求关系管理，确保软件符合功能需求
-  \item[\ding{51}] \highlight{质量管控与问题跟踪}：作为技术接口人协调多个团队，推动产品问题解决，建立质量问题分派和跟踪机制，确保项目按时交付
-  \item[\ding{51}] \highlight{自动化测试工具开发}：基于\tech{Python}开发自动化测试脚本生成工具，根据客户通信矩阵生成\tech{CANoe CAPL}脚本和\tech{vTESTstudio}配置
+  \item[\ding{51}] \highlight{车身域控制器集成测试}：搭建车身域控制器的集成测试硬件和软件环境，负责软件编译、烧录和集成测试，定位集成测试和系统测试中的问题并与相关工程师沟通改进软件
+  \item[\ding{51}] \highlight{自动化测试工具开发}：基于\tech{Python}开发自动化测试脚本生成工具，根据客户\tech{CAN/LIN/IO}通信矩阵自动生成\tech{CANoe CAPL}脚本和\tech{vTESTstudio}配置文件，在\tech{vTESTstudio}中构建自动化测试项目并编写自动化测试用例
+  \item[\ding{51}] \highlight{测试程序开发}：设计生产线最终检验程序，开发\tech{EMC}上位机和\tech{PCBA}的\tech{EMC}测试专用软件，确保产品符合电磁兼容性要求
+  \item[\ding{51}] \highlight{客户支持与软件发布}：定位客户问题并协调相关工程师改进软件，作为技术接口人向客户发布软件并提供维护服务，建立质量问题分派和跟踪机制
 \end{itemize}
 
-\subsubsection*{AUTOSAR车身控制器项目经验}
+\subsubsection*{客户项目经验}
 \hfill \textit{2021年1月 -- 2023年8月}
 
 \begin{itemize}
-  \item[\ding{108}] \textbf{长城汽车} - 欧拉好猫/黑猫系列\tech{KBCM}项目｜车身域控制器集成负责人
+  \item[\ding{108}] \textbf{长城汽车} - 欧拉好猫/黑猫系列\tech{KBCM}项目｜集成开发负责人
   \begin{itemize}
-    \item 主导\tech{AUTOSAR BSW}基础软件配置，负责\tech{CAN/LIN}通信、\tech{UDS}诊断、\tech{NVM}存储等核心模块配置，支持\tech{BLE, TBOX, VCU, ESCL}等安全关键模块的通信集成
-    \item 建立安全关键系统的通信测试验证体系，确保车身域控制器关键模块在\tech{ISO 26262 ASIL-D}等级要求下的功能安全性
+    \item 进行AUTOSAR架构设计和\tech{RTE}配置, 进行\tech{OS}时序挂载和任务调度优化
+    \item 负责车身域控制器的集成测试和问题定位，开发\tech{BLE, TBOX, VCU, ESCL}认证模块, 开发\tech{NVM Manager}模块和\tech{IOHWab}模块
+    \item 负责量产软件发布和客户支持，协调相关工程师解决客户问题
   \end{itemize}
 
   \item[\ding{108}] \textbf{理想汽车} - 车和家系列\tech{KBCM}项目｜集成开发负责人
   \begin{itemize}
-    \item 负责新能源汽车车身控制器的\tech{BSW}基础软件集成和功能安全验证，完成量产交付
+    \item 负责新能源汽车车身域控制器的集成测试和软件发布
   \end{itemize}
 
-  \item[\ding{108}] \textbf{江西五十铃} - \tech{PEPS}无钥匙进入系统｜集成开发负责人
+  \item[\ding{108}] \textbf{江西五十铃} - \tech{PEPS}无钥匙进入系统 \& \tech{ESCL}电子转向锁项目｜集成开发负责人
   \begin{itemize}
-    \item 主导车辆防盗安全系统的\tech{BSW}集成，负责\tech{LIN}通信、\tech{UDS}诊断、\tech{NVM}存储配置，确保\tech{PEPS}系统满足\tech{ISO 26262 ASIL-B}功能安全等级要求
+    \item 负责\tech{PEPS}和\tech{ESCL}系统的集成测试和客户问题支持
   \end{itemize}
 
   \item[\ding{108}] \textbf{宇通客车} - \tech{KBCM}车身控制器项目｜软件开发工程师
   \begin{itemize}
-    \item 负责商用车车身控制器的内灯模块\tech{SWC}开发、单元测试和系统集成
+    \item 负责商用车车身控制器的内灯模块软件开发和单元测试
   \end{itemize}
 \end{itemize}
 

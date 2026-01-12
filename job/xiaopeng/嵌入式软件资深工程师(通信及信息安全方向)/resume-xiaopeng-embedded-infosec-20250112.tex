@@ -1,0 +1,232 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{ctex}
+\usepackage{geometry}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% 页面设置
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 标题格式
+\titleformat{\section}
+  {\Large\bfseries\sffamily\raggedright}
+  {}
+  {0em}
+  {}
+  [{\titlerule[0.5pt]}]
+
+\titleformat{\subsection}
+  {\large\bfseries\sffamily}
+  {}
+  {0em}
+  {}
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+\titlespacing{\subsection}{0pt}{6pt}{4pt}
+
+% 列表格式
+\setlist{
+  leftmargin=0pt,
+  itemsep=3pt,
+  parsep=0pt,
+  topsep=3pt,
+  labelsep=8pt
+}
+
+% 超链接设置
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+
+\begin{document}
+
+% 个人信息
+\begin{center}
+  {\Huge\bfseries\sffamily 张凯} \\[6pt]
+  {\large\texttt{Tel.: +86 15122986177} | \texttt{E-Mail: 15122986177@163.com}} \\[6pt]
+  {\large 个人简历} \\[3pt]
+  {\normalsize 基本信息：张凯 | 婚姻状况：已婚 | 出生日期：1992年3月11日 | 毕业时间：2020年10月}
+\end{center}
+
+\vspace{12pt}
+
+\hrule
+\vspace{12pt}
+
+% 核心技能摘要
+\section*{核心技能摘要}
+
+\noindent
+\textbf{\sffamily 车载以太网通信中间件专家 | AUTOSAR架构集成工程师} \\
+5年汽车电子软件开发经验，专注于车载以太网通信、AUTOSAR架构集成、SOA中间件部署、CI/CD流水线设计。精通SOME/IP服务配置与测试、TSN时间同步协议（IEEE802.1AS gPTP），具备从架构设计到实际部署的全栈开发能力。
+
+\vspace{6pt}
+
+\textbf{核心能力矩阵：}
+\begin{itemize}
+  \item \textbf{车载以太网与SOA通信}：主导SOME/IP服务在Davinci Configurator中的全流程配置与部署（SoAd、SD、BswM、EcuC、ComM、PduR），深入理解TSN协议族（IEEE802.1AS gPTP时间同步、802.1Qbv、802.1Qav），具备车载以太网通信验证测试经验，了解DDS通信协议原理（未实战）
+  \item \textbf{AUTOSAR架构与工具链}：精通AUTOSAR CP标准架构，掌握RTE接口连接、OS时序挂载与代码生成，主导开发yaml2arxml转换工具替代Davinci Developer，具备分布式配置管理自动化经验，熟悉MCAL配置
+  \item \textbf{通信协议栈与网络调试}：精通CAN/CAN-FD/LIN/Ethernet通信协议栈，熟练使用Vector CANoe配合VN5650进行通信验证测试，具备基于Linux环境和劳德巴赫调试器的C代码级调试能力
+  \item \textbf{CI/CD与自动化工具链}：设计企业级CI/CD流水线系统（Jenkins-Gerrit-Gradle），使用Groovy开发Jenkins Job脚本并集成ktlint、detekt等静态检查工具，确保代码质量符合MISRA-C规范
+  \item \textbf{嵌入式软件开发}：精通C语言嵌入式开发，精通Python面向对象编程及设计模式，熟悉Groovy脚本语言，具备MATLAB Stateflow的SWC开发经验
+  \item \textbf{域控制器集成经验}：具备车身域控制器和中央域控制器（ZC Orin + HI Tc 397）集成开发经验，精通车载网络通信架构和系统级集成测试
+\end{itemize}
+
+% 教育信息
+\section*{教育信息}
+
+\noindent
+\textbf{\sffamily 卡尔斯鲁厄理工学院(Karlsruhe Institut für Technologie)（KIT）} \hfill
+\textit{德国工学硕士} \\
+\textbf{2017年4月 – 2020年10月} \\[4pt]
+\textbf{专业：机电一体化及信息技术} \\[4pt]
+\begin{itemize}
+  \item 深化方向1：工业自动化
+  \item 深化方向2：机器人技术
+  \item 毕业设计：用于优化动态眼球追踪系统数据质量的分析方法的设计和验证
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 河北工业大学(211)} \hfill
+\textit{中国工学学士} \\
+\textbf{2012年9月 – 2016年7月} \\[4pt]
+\textbf{本专业：机械设计制造及其自动化} \\[4pt]
+\begin{itemize}
+  \item 毕业设计：人体工程学自动调节座椅（优秀毕业设计）
+\end{itemize}
+
+% 实践经验
+\section*{实践经验}
+
+\noindent
+\textbf{\sffamily 沃尔沃汽车（亚太）投资控股有限公司 Volvo Car (Asia Pacific) Investment Holding Co., Ltd.} \hfill
+\textit{中国上海} \\
+\textbf{2023年11月 – 至今}
+
+\vspace{6pt}
+\textbf{\large SPA3/GPA中央域控车载以太网通信中间件集成负责人} \hfill
+\textit{2023年11月 – 2025年7月}
+\begin{itemize}
+  \item \textbf{车载以太网SOME/IP服务部署}：主导中央域控制器（ZC Orin + HI Tc 397）的SOME/IP通信中间件全流程配置，在Davinci Configurator中完成SoAd、SD、BswM、EcuC、ComM、PduR等模块配置，实现跨域通信服务的正确部署和确定性通信保障
+  \item \textbf{TSN时间同步配置}：负责EthTSyn模块的IEEE802.1AS(gPTP)时间同步协议配置，基于AUTOSAR规范实现车载以太网网络时钟同步，确保域间通信的时序确定性
+  \item \textbf{通信协议验证测试}：使用Vector CANoe配合VN5650设备进行SOME/IP服务通信测试，验证车载以太网通信机制的可靠性和实时性，并通过Linux环境配置和劳德巴赫调试器进行C代码级问题定位
+  \item \textbf{AUTOSAR工具链开发}：主导开发yaml2arxml转换工具和SWC配置管理工具（stakeholder\_build\_template），实现从YAML配置脚本到ARXML架构文件和代码的全流程分布式管理自动化，替代Davinci Developer核心功能，显著提升配置效率
+  \item \textbf{ECUExtract合规管理}：负责ECUExtract\_Unflattened.arxml文件的合规检查和Davinci Developer/Configurator配置消错，确保AUTOSAR架构一致性和配置文件的完整性
+\end{itemize}
+
+\vspace{6pt}
+\textbf{\large CI/CD架构与软件质量保障体系负责人} \hfill
+\textit{2025年8月 – 至今}
+\begin{itemize}
+  \item \textbf{代码质量门禁系统}：设计企业级CI/CD流水线系统，基于Gerrit-Jenkins-Gradle技术栈实现代码质量门禁，使用Groovy语言开发Jenkins Job脚本并集成ktlint、detekt等静态代码检查工具，确保代码质量符合MISRA-C编码规范
+  \item \textbf{并发架构优化}：设计主从Job并发执行架构，使用多进程并发技术，提升CI/CD流水线执行效率30\%，支持大型项目的快速构建和测试
+  \item \textbf{版本管理与发布流程}：设计MongoDB数据库架构实现检查结果分批记录与集中仲裁，确保软件版本的完整性和可追溯性，构建软件构建、打包、发布的全流程自动化
+  \item \textbf{可配置化测试框架}：设计YAML配置驱动的自动化测试系统，解决共享库动态加载问题和多版本pipeline脚本管理，支持依据不同Trigger来源动态加载测试框架
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{\sffamily 科世达(上海)机电有限公司，KOSTAL (Shanghai) Mechatronic Co., Ltd.} \hfill
+\textit{中国上海} \\
+\textbf{2020年12月 – 2023年11月}
+
+\vspace{6pt}
+\textbf{\large 科世达车身域控制器CEM项目 | 域控AUTOSAR集成负责人} \hfill
+\textit{2022年12月 – 2023年11月}
+\begin{itemize}
+  \item \textbf{域控制器架构集成}：负责车身域控制器的AUTOSAR CP架构集成，主导SWC间通信配置和中间件组件集成，建立完整的编译-烧录-测试流程
+  \item \textbf{跨域通信协调}：作为技术接口人协调开发、测试、系统等多个团队，负责软件集成测试和系统级问题定位，确保域控制器系统稳定性和按时交付
+  \item \textbf{测试工具链开发}：设计产线终检程序和EMC测试上位机软件，构建自动化测试框架提升测试效率，支持后期维护和问题跟踪
+\end{itemize}
+
+\vspace{6pt}
+\textbf{\large 车载网络自动化测试平台开发 | 通信协议测试专家} \hfill
+\textit{2023年1月 – 2023年6月}
+\begin{itemize}
+  \item \textbf{自动化工具链开发}：基于Python开发自动化测试脚本生成工具，根据客户CAN/LIN/以太网通信矩阵生成CANoe CAPL脚本和vTESTstudio配置文件
+  \item \textbf{通信协议测试验证}：针对CAN/CAN-FD/LIN/Ethernet通信协议设计测试用例，验证车载网络通信的可靠性和实时性，确保域间通信质量
+  \item \textbf{测试工程构建}：构建完整的vTESTstudio自动化测试工程，实现从测试用例设计到执行的全流程自动化，并在团队内推广自动化测试方法论
+\end{itemize}
+
+\vspace{8pt}
+
+\textbf{\large 客户项目经验精选}
+\begin{itemize}
+  \item \textbf{长城汽车} - 欧拉好猫/黑猫系列KBCM项目 | 车身域控制器集成负责人 \hfill \textit{2021年1月 – 2023年8月}
+  \begin{itemize}
+    \item 主导AUTOSAR CP架构下的车身域控制器集成开发，负责BLE、TBOX、VCU、ESCL等安全关键模块的通信集成，符合ISO 26262功能安全要求
+  \end{itemize}
+  \item \textbf{理想汽车} - 车和家系列KBCM项目 | 集成开发负责人 \hfill \textit{2022年3月 – 2022年10月}
+  \begin{itemize}
+    \item 负责新能源汽车车身控制器的AUTOSAR架构集成和功能安全验证
+  \end{itemize}
+  \item \textbf{江西五十铃} - PEPS无钥匙进入系统 | 集成开发负责人 \hfill \textit{2022年3月 – 2023年3月}
+  \begin{itemize}
+    \item 主导车辆防盗安全系统的通信协议集成和测试验证，确保PEPS系统满足ISO 26262 ASIL-B功能安全等级要求
+  \end{itemize}
+  \item \textbf{其他客户项目}：宇通客车KBCM项目、江西五十铃ESCL项目等多个域控制器集成项目，积累了丰富的多客户项目经验
+\end{itemize}
+
+% 毕业设计
+\section*{毕业设计}
+
+\noindent
+\textbf{\sffamily 2019年8月 – 2020年8月} \\
+\textbf{Institut für Arbeitswissenschaft und Betriebsorganisation(KIT)，德国} \\
+\textbf{项目：用于优化动态眼球追踪系统数据质量的分析方法的设计和验证}
+\begin{itemize}
+  \item 设计实验收集眼球追踪系统的点云追踪图像数据
+  \item 利用开源目标识别AI模型Mask\_RCNN将图像数据转化为坐标数据集
+  \item 在Python中利用误差空间插值模型补偿眼球追踪系统，从而实现优化眼球追踪系统数据质量的目标
+\end{itemize}
+
+\vspace{12pt}
+
+% 技能与爱好
+\section*{技能与爱好}
+
+\textbf{外语：}
+\begin{itemize}
+  \item 英语（雅思：6.5）
+  \item 德语（TestDaf：16/C1）
+\end{itemize}
+
+\textbf{软件工具技能：}
+\begin{itemize}
+  \item \textbf{编程语言：} C语言（嵌入式开发）、Python（面向对象、多线程、自动化脚本）、Groovy（Jenkins Pipeline）、MATLAB Stateflow（SWC开发）
+  \item \textbf{AUTOSAR与工具链：} DaVinci Developer/Configurator、AUTOSAR CP架构、RTE配置、OS时序挂载、MCAL配置、yaml2arxml转换
+  \item \textbf{通信协议栈：} CAN/CAN-FD/LIN/Ethernet、SOME/IP（SoAd、SD、BswM）、TSN（IEEE802.1AS gPTP、802.1Qbv）、车载以太网、UDS诊断
+  \item \textbf{Vector工具链：} CANoe（通信测试）、vTESTstudio（自动化测试）、VN5650（以太网接口）
+  \item \textbf{CI/CD与版本管理：} Jenkins（Groovy脚本）、Gerrit、Gradle、MongoDB、Git、Smart SVN
+  \item \textbf{调试工具：} Lauterbach Trace32（C代码调试）、Linux环境、劳德巴赫调试器
+  \item \textbf{开发环境：} SourceInsight、Eclipse、VS Code、PyCharm
+  \item \textbf{信息安全（了解原理）：} SecOC、HSM、安全启动、DDS通信协议（未实战）、MACSec
+\end{itemize}
+
+\textbf{爱好特长：}
+\begin{itemize}
+  \item 中长跑、硬笔书法、无动力帆船
+\end{itemize}
+
+% 特别经历和荣誉
+\section*{特别经历和荣誉}
+
+\begin{itemize}
+  \item \textbf{科世达亚洲总部AE电子开发部年夜饭晚会主持人} \hfill \textit{2023年2月16日}
+  \item \textbf{科世达(上海)机电有限公司2022年度优秀员工} \hfill \textit{2022年1月 – 2022年12月}
+  \item \textbf{科世达亚洲总部AE电子开发部年度表彰大会主持人} \hfill \textit{2022年2月28日}
+  \item \textbf{上海市防疫封控期间驻守公司，协助完成多项项目紧急任务} \hfill \textit{2022年3月28日 – 2022年6月1日}
+\end{itemize}
+
+\end{document}

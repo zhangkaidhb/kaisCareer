@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  8 JAN 2026 10:52
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  8 JAN 2026 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,6 +746,14 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+
+Overfull \hbox (0.16331pt too wide) in paragraph at lines 137--138
+[][]\TU/lmr/bx/n/10.95 AUTOSAR CP \TU/SimHei(0)/b/n/10.95 基 础 软 件 配 置[]：|  负 责[
+]\TU/lmtt/m/n/10.95 BSW[]\TU/SimHei(0)/b/n/10.95 模 块 配 置 和[]\TU/lmtt/m/n/10.95 
+MCAL[]\TU/SimHei(0)/b/n/10.95 配 置，|  包 括[]\TU/lmtt/m/n/10.95 CanIf, LinIf, PduR
+, ComM, Dem,
+ []
+
 ! Extra }, or forgotten \endgroup.
 <recently read> }
                  
@@ -816,10 +824,10 @@ t changed.
 Here is how much of TeX's memory you used:
  16465 strings out of 408640
  356226 string characters out of 5749145
- 800545 words of memory out of 5000000
+ 797545 words of memory out of 5000000
  39303 multiletter control sequences out of 15000+600000
  564588 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1220b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,1220b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on zhang_kai-jike-rtos_dev-20250108.pdf (3 pages).

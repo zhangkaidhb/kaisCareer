@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  12 JAN 2026 23:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  18 JAN 2026 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -744,6 +744,14 @@ ei(0)/b/n/10.95 开 发[]\TU/lmtt/m/n/10.95 yaml2arxml[]\TU/SimHei(0)/b/n/10.95 
 [1
 
 ]
+Overfull \hbox (12.51549pt too wide) in paragraph at lines 151--152
+[][]\TU/SimHei(0)/b/n/10.95 车 身 域 控 制 器 软 件 架 构[]\TU/lmr/m/n/10.95 : \TU/SimHei
+(0)/b/n/10.95 进 行[]\TU/lmtt/m/n/10.95 AUTOSAR SWC[]\TU/SimHei(0)/b/n/10.95 架 构 
+设 计 和[]\TU/lmtt/m/n/10.95 Davinci Developer[]\TU/SimHei(0)/b/n/10.95 中 所 有 相 关 
+配 置，|  在 满 足 各[]\TU/lmtt/m/n/10.95 SWC[]\TU/SimHei(0)/b/n/10.95 接
+ []
+
+
 
 [2]
 
@@ -763,10 +771,10 @@ Package rerunfilecheck Info: File `zhang_kai-jike-mcu_bsw-20250108.out' has not
 Here is how much of TeX's memory you used:
  16431 strings out of 408640
  354012 string characters out of 5749145
- 790540 words of memory out of 5000000
+ 791540 words of memory out of 5000000
  39269 multiletter control sequences out of 15000+600000
  564588 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1219b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,1219b,549s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on zhang_kai-jike-mcu_bsw-20250108.pdf (3 pages).

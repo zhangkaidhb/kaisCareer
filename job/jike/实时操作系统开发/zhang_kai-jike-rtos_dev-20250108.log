@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  8 JAN 2026 22:29
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  18 JAN 2026 22:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,64 +722,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: profile_photo.jpg Graphic file (type bmp)
 <profile_photo.jpg>
 
-Overfull \hbox (21.9pt too wide) in paragraph at lines 122--123
+Overfull \hbox (21.9pt too wide) in paragraph at lines 125--126
 [][] 
  []
-
-
-LaTeX Font Warning: Font shape `TU/SimHei(0)/m/it' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 128.
 
 
 
 [1
 
 ]
-! Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.137 ...配置和代码生成，解决\tech{ECUExtract}合规检查错误和配置冲突问题}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+
+LaTeX Font Warning: Font shape `TU/SimHei(0)/m/it' undefined
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 131.
 
 
-Overfull \hbox (0.16331pt too wide) in paragraph at lines 137--138
-[][]\TU/lmr/bx/n/10.95 AUTOSAR CP \TU/SimHei(0)/b/n/10.95 基 础 软 件 配 置[]：|  负 责[
-]\TU/lmtt/m/n/10.95 BSW[]\TU/SimHei(0)/b/n/10.95 模 块 配 置 和[]\TU/lmtt/m/n/10.95 
-MCAL[]\TU/SimHei(0)/b/n/10.95 配 置，|  包 括[]\TU/lmtt/m/n/10.95 CanIf, LinIf, PduR
-, ComM, Dem,
+Overfull \hbox (1.03407pt too wide) in paragraph at lines 141--142
+[][]\TU/SimHei(0)/b/n/10.95 编 译 工 具 链 与 构 建 系 统[]：|  负 责 嵌 入 式[]\TU/lmtt/m/n/10
+.95 C[]\TU/SimHei(0)/b/n/10.95 语 言 交 叉 编 译 环 境 搭 建，|  配 置[]\TU/lmtt/m/n/10.95 G
+CC[]\TU/SimHei(0)/b/n/10.95 和[]\TU/lmtt/m/n/10.95 Tasking[]\TU/SimHei(0)/b/n/10
+.95 编 译 器，|  编 写[]\TU/lmtt/m/n/10.95 Makefile[]\TU/SimHei(0)/b/n/10.95 构
  []
 
 ! Extra }, or forgotten \endgroup.
 <recently read> }
                  
-l.158 ...中断优先级分配、\tech{Alarm}定时器配置，确保车身域控制器的实时性要求}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.159 ...生成和\tech{OS}时序挂载，确保\tech{Runnable}实体正确调度}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.160 ...h{Trace}功能定位系统级问题，分析任务执行时序和中断响应时间，优化系统性能}
+l.142 ...{0x10/0x22/0x2E/0x19}等），支持量产软件的故障诊断和刷写功能}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -788,7 +755,9 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Overfull \hbox (2.6937pt too wide) in paragraph at lines 160--161
+
+[2]
+Overfull \hbox (2.6937pt too wide) in paragraph at lines 165--166
 [][]\TU/SimHei(0)/b/n/10.95 系 统 级 调 试 与 性 能 优 化[]：|  使 用[]\TU/lmtt/m/n/10.95 iS
 YSTEM winIDEA[]\TU/SimHei(0)/b/n/10.95 进 行[]\TU/lmtt/m/n/10.95 C[]\TU/SimHei(0)
 /b/n/10.95 代 码 级 调 试，|  通 过[]\TU/lmtt/m/n/10.95 Breakpoint[]\TU/SimHei(0)/b/n/1
@@ -797,9 +766,7 @@ m/n/10.95 Trace[]\TU/SimHei(0)/b/n/10.95 功
  []
 
 
-
-[2]
-Overfull \hbox (7.0138pt too wide) in paragraph at lines 172--173
+Overfull \hbox (7.0138pt too wide) in paragraph at lines 178--179
 []\TU/SimHei(0)/b/n/10.95 主 导[]\TU/lmtt/m/n/10.95 AUTOSAR CP[]\TU/SimHei(0)/b/n
 /10.95 架 构 下 的 车 身 控 制 器 集 成 开 发，|  负 责[]\TU/lmtt/m/n/10.95 OS[]\TU/SimHei(0)/b
 /n/10.95 任 务 调 度 优 化 和 系 统 实 时 性 保 障，|  符 合[]\TU/lmtt/m/n/10.95 ISO 26262[]\TU/
@@ -808,7 +775,9 @@ SimHei(0)/b/n/10.95 功
 
 
 
-[3] (zhang_kai-jike-rtos_dev-20250108.aux)
+[3]
+
+[4] (zhang_kai-jike-rtos_dev-20250108.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
@@ -822,12 +791,12 @@ t changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16465 strings out of 408640
- 356226 string characters out of 5749145
- 797545 words of memory out of 5000000
- 39303 multiletter control sequences out of 15000+600000
+ 16474 strings out of 408640
+ 356816 string characters out of 5749145
+ 802545 words of memory out of 5000000
+ 39312 multiletter control sequences out of 15000+600000
  564588 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1220b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,111p,1220b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on zhang_kai-jike-rtos_dev-20250108.pdf (3 pages).
+Output written on zhang_kai-jike-rtos_dev-20250108.pdf (4 pages).

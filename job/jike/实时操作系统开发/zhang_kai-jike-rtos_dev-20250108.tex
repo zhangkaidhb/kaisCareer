@@ -97,7 +97,7 @@
 \section*{职业概述}
 
 \normalsize
-3年以上实时操作系统和\tech{AUTOSAR CP}基础软件栈开发经验，熟悉\tech{AUTOSAR OS}任务调度、中断管理和时序优化，熟悉\tech{Infineon Tricore}、\tech{Arm-M/R}等车规级\tech{MCU}芯片架构，具备高性能中央计算平台和车身域控制器的\tech{OS}模块开发与维测能力。
+5年实时操作系统和\tech{AUTOSAR CP}基础软件栈开发经验，精通\tech{AUTOSAR OS}任务调度、中断管理和系统实时性优化，深入理解\tech{Infineon Tricore}、\tech{Arm-M/R}等车规级\tech{MCU}芯片架构，具备高性能中央计算平台和车身域控制器的\tech{OS}模块开发、量产软件问题定位和维测能力增强设计经验，熟练掌握嵌入式\tech{C}语言开发工具链（\tech{GCC}、\tech{Tasking}、\tech{Makefile}、\tech{Git}）。
 
 % ============ 关键能力 ============
 \section*{关键能力}
@@ -108,6 +108,8 @@
   \skillitem{MCU芯片架构}{熟悉\tech{Infineon Tricore}（\tech{AURIX TC3xx}系列）多核架构、\tech{Arm Cortex-M/R}系列架构，了解\tech{MCU}内存映射、时钟树配置等硬件特性}
   \skillitem{系统性能优化}{熟悉系统实时性要求，能够使用\tech{Trace32}进行性能分析和任务调试}
   \skillitem{通信协议栈}{熟悉车载通信协议，包括\tech{CAN}（\tech{Classic CAN, CAN-FD}）、\tech{LIN}、车载以太网\tech{SOME/IP}配置（\tech{SoAd}、\tech{SD}、\tech{PduR}、\tech{TCP/UDP}）、\tech{DoIP}诊断、\tech{UDS}诊断（\tech{ISO 14229}、\tech{ISO 15765}）、\tech{XCP}标定协议}
+  \skillitem{编译工具链}{熟练使用\tech{GCC}、\tech{Tasking}等嵌入式编译器，掌握\tech{Makefile}构建脚本编写、\tech{Linker Script}链接脚本配置、\tech{Git}版本管理，具备交叉编译环境和自动化构建系统搭建经验}
+  \skillitem{诊断与标定协议}{熟悉\tech{UDS}诊断协议（\tech{ISO 14229 UDS}、\tech{ISO 15765-2 TP}）、\tech{XCP}标定协议（\tech{ISO 15031}），负责\tech{Dem}（\tech{Diagnostic Event Manager}）和\tech{Dcm}（\tech{Diagnostic Communication Manager}）模块配置，具备\tech{DID}、\tech{RID}、\tech{DTC}配置和诊断测试经验}
   \skillitem{调试与维测能力}{熟练使用\tech{Lauterbach Trace32}、\tech{iSYSTEM winIDEA}进行\tech{C}代码级调试，具备量产软件问题定位和维测能力增强设计经验，熟悉\tech{JTAG}、\tech{NEXUS}、\tech{DAP}等调试接口}
 \end{itemize}
 
@@ -117,8 +119,9 @@
   \textbf{RTOS} & \tech{AUTOSAR OS}, \tech{OSEK/VDX} \\
   \textbf{芯片架构} & \tech{Infineon Tricore(AURIX TC3xx)}, \tech{Arm Cortex-M/R}, \tech{Renesas RH850}, \tech{NXP MPC} \\
   \textbf{AUTOSAR CP} & \tech{MCAL}, \tech{BSW}, \tech{RTE}, \tech{SWC}, \tech{OS}配置 \\
-  \textbf{以太网通信} & \tech{SOME/IP}, \tech{SoAd, SD, PduR}, TCP/UDP配置 \\
-  \textbf{开发调试} & \tech{Lauterbach Trace32}, \tech{iSYSTEM winIDEA}, \tech{GCC}, \tech{Makefile}, \tech{Git}
+  \textbf{编译工具链} & \tech{GCC}, \tech{Tasking}, \tech{Makefile}, \tech{Linker Script}, \tech{Git} \\
+  \textbf{通信协议} & \tech{CAN/CAN-FD}, \tech{LIN}, \tech{SOME/IP}, \tech{DoIP}, \tech{UDS}, \tech{XCP} \\
+  \textbf{调试工具} & \tech{Lauterbach Trace32}, \tech{iSYSTEM winIDEA}, \tech{CANoe}
 \end{tabularx}
 
 % ============ 工作经历 ============
@@ -134,7 +137,9 @@
   \item[\ding{51}] \highlight{AUTOSAR OS配置与优化}：负责高性能计算平台\tech{HI}(基于Infineon TC397)的\tech{AUTOSAR OS}配置和优化，设计任务调度策略（\tech{Task}优先级、\tech{Activation}、\tech{Rate}）、中断管理方案（\tech{ISR2}配置、\tech{ISR2 to Task}通信）、资源管理策略（\tech{Resource}锁、\tech{Spinlock}多核同步），确保系统实时性和确定性要求
   \item[\ding{51}] \highlight{系统实时性分析}：进行系统级实时性分析，使用\tech{Trace32}进行任务执行时间测量、中断延迟分析、\tech{CPU}负载统计，优化任务调度时序和优先级配置，确保关键任务（如制动、转向）的 worst-case execution time (WCET) 满足实时性要求
   \item[\ding{51}] \highlight{多核同步与通信}：负责\tech{Tricore}多核架构下的核间通信（\tech{Spinlock}、\tech{MPU}保护区域配置）和同步机制设计，配置\tech{Core 0/1/2}的任务分配和\tech{OH}（\tech{Owner Ship）管理，确保多核系统的数据一致性和实时性保障}
-  \item[\ding{51}] \highlight{AUTOSAR CP基础软件配置}：负责\tech{BSW}模块配置和\tech{MCAL}配置，包括\tech{CanIf, LinIf, PduR, ComM, Dem, Dcm}等基础软件模块，完成\tech{ARXML}配置和代码生成，解决\tech{ECUExtract}合规检查错误和配置冲突问题}
+  \item[\ding{51}] \highlight{AUTOSAR CP基础软件配置}：负责\tech{BSW}模块配置和\tech{MCAL}配置，包括\tech{CanIf}、\tech{LinIf}、\tech{PduR}、\tech{ComM}、\tech{Dem}、\tech{Dcm}等基础软件模块，完成\tech{ARXML}配置和代码生成，解决\tech{ECUExtract}合规检查错误和配置冲突问题
+  \item[\ding{51}] \highlight{编译工具链与构建系统}：负责嵌入式\tech{C}语言交叉编译环境搭建，配置\tech{GCC}和\tech{Tasking}编译器，编写\tech{Makefile}构建脚本和\tech{Linker Script}链接脚本，优化编译选项以提升代码性能和减少\tech{Flash}/\tech{RAM}占用
+  \item[\ding{51}] \highlight{诊断协议实现与测试}：负责\tech{UDS}诊断协议栈配置，实现\tech{DID}数据标识符、\tech{RID}例行标识符、\tech{DTC}诊断故障码的配置和管理，使用\tech{CANoe}进行诊断服务测试（\tech{0x10/0x22/0x2E/0x19}等），支持量产软件的故障诊断和刷写功能}
   \item[\ding{51}] \highlight{量产软件维测能力增强}：参与量产软件的交付问题定位和分析，设计维测能力增强方案，包括\tech{Log}存储机制、\tech{Assert}断言检查、\tech{Watchdog}监控、\tech{Fault Injection}测试等，提升软件问题定位效率
   \item[\ding{51}] \highlight{工具链开发}：主导基于\tech{Python}的\tech{yaml2arxml}转换工具和\tech{SWC}配置管理工具开发，实现\tech{AUTOSAR}配置文件的全流程自动化管理，替代\tech{Davinci Developer}核心功能，显著提升配置效率
 \end{itemize}
@@ -155,10 +160,11 @@
 \hfill \textit{2020年12月 -- 2023年11月}
 
 \begin{itemize}
-  \item[\ding{51}] \highlight{AUTOSAR OS配置与集成}：负责车身域控制器的\tech{AUTOSAR OS}配置和集成，设计\tech{Task}调度方案（\tech{CAN TP}周期任务、\tech{LIN}调度表、\tech{Mode}管理任务）、中断优先级分配、\tech{Alarm}定时器配置，确保车身域控制器的实时性要求}
-  \item[\ding{51}] \highlight{RTE接口连接与代码生成}：主导\tech{SWC}间\tech{RTE}接口设计和连接，配置\tech{Sender-Receiver}和\tech{Client-Server}通信，负责\tech{RTE}代码生成和\tech{OS}时序挂载，确保\tech{Runnable}实体正确调度}
-  \item[\ding{51}] \highlight{系统级调试与性能优化}：使用\tech{iSYSTEM winIDEA}进行\tech{C}代码级调试，通过\tech{Breakpoint}、\tech{Watchpoint}、\tech{Trace}功能定位系统级问题，分析任务执行时序和中断响应时间，优化系统性能}
-  \item[\ding{51}] \highlight{软件集成与发布}：进行完整的编译、烧录、测试流程，负责软件集成测试和系统级问题定位，建立软件版本与需求关系管理，确保软件符合功能需求
+  \item[\ding{51}] \highlight{AUTOSAR OS配置与集成}：负责车身域控制器的\tech{AUTOSAR OS}配置和集成，设计\tech{Task}调度方案（\tech{CAN TP}周期任务、\tech{LIN}调度表、\tech{Mode}管理任务）、中断优先级分配、\tech{Alarm}定时器配置，确保车身域控制器的实时性要求
+  \item[\ding{51}] \highlight{RTE接口连接与代码生成}：主导\tech{SWC}间\tech{RTE}接口设计和连接，配置\tech{Sender-Receiver}和\tech{Client-Server}通信，负责\tech{RTE}代码生成和\tech{OS}时序挂载，确保\tech{Runnable}实体正确调度
+  \item[\ding{51}] \highlight{系统级调试与性能优化}：使用\tech{iSYSTEM winIDEA}进行\tech{C}代码级调试，通过\tech{Breakpoint}、\tech{Watchpoint}、\tech{Trace}功能定位系统级问题，分析任务执行时序和中断响应时间，优化系统性能
+  \item[\ding{51}] \highlight{软件集成与构建}：负责车身域控制器软件集成，维护\tech{Makefile}构建脚本和\tech{GCC}交叉编译环境，优化编译配置以提升构建效率，管理软件版本和需求追溯关系，确保软件符合\tech{ASPICE}流程要求
+  \item[\ding{51}] \highlight{诊断模块开发}：负责车身域控制器\tech{NVM}模块开发，实现\tech{SWC}配置数据、诊断数据（\tech{DID}、\tech{RID}、\tech{DTC}）的持久化存储，使用\tech{CANoe}进行诊断服务测试验证
   \item[\ding{51}] \highlight{质量管控与问题跟踪}：作为技术接口人协调多个团队，推动产品问题解决，建立质量问题分派和跟踪机制，确保项目按时交付
   \item[\ding{51}] \highlight{自动化测试工具开发}：基于\tech{Python}开发自动化测试脚本生成工具，根据客户通信矩阵生成\tech{CANoe CAPL}脚本和\tech{vTESTstudio}配置，构建自动化测试框架提升集成测试效率
 \end{itemize}

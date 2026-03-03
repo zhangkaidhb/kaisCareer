@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  8 JAN 2026 10:52
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  20 JAN 2026 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -560,30 +560,30 @@ Package xeCJK Warning: Redefining CJKfamily `\CJKsfdefault' (Microsoft YaHei).
 
 Package xeCJK Warning: Redefining CJKfamily `\CJKttdefault' (FangSong).
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 76.
+Package hyperref Info: Option `colorlinks' set `true' on input line 77.
 (zhang_kai-xiaomi-smart_cockpit_mcu-20250108.aux)
 \openout1 = `zhang_kai-xiaomi-smart_cockpit_mcu-20250108.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -591,57 +591,57 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 78.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 78.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 78.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 78.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 78.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 78.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 78.
-LaTeX Font Info:    Redeclaring math accent \check on input line 78.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 78.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 78.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 78.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 78.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 79.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 79.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 79.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 79.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 79.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 79.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 79.
+LaTeX Font Info:    Redeclaring math accent \check on input line 79.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 79.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 79.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 79.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 79.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 78.
+(Font)              `operators' in the math version `normal' on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 78.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 79.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 78.
+(Font)              `operators' in the math version `bold' on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 78.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 78.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 78.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 78.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 78.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 78.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 79.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 78.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 78.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 78.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 78.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 79.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -677,7 +677,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 78.
+Package hyperref Info: Link coloring ON on input line 79.
 (zhang_kai-xiaomi-smart_cockpit_mcu-20250108.out)
 (zhang_kai-xiaomi-smart_cockpit_mcu-20250108.out)
 \@outlinefile=\write3
@@ -686,7 +686,7 @@ Package hyperref Info: Link coloring ON on input line 78.
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 82.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 83.
 
 
 Package fontspec Info: 
@@ -715,54 +715,27 @@ Package fontspec Info:
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 85.
+(Font)              <10.95> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 85.
+(Font)              <8> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 85.
+(Font)              <6> on input line 86.
 File: profile_photo.jpg Graphic file (type bmp)
 <profile_photo.jpg>
 
-Overfull \hbox (24.52628pt too wide) in paragraph at lines 109--110
-[]\TU/SimHei(0)/b/n/10.95 座 舱 通 信 协 议\TU/lmr/m/n/10.95 : \TU/SimHei(0)/b/n/10.9
-5 精 通[]\TU/lmtt/m/n/10.95 CAN[]\TU/SimHei(0)/b/n/10.95 总 线 通 信 协 议，|  熟 悉[]\TU/
-lmtt/m/n/10.95 UDS[]\TU/SimHei(0)/b/n/10.95 诊 断 协 议  |（[]\TU/lmtt/m/n/10.95 ISO
- 14229[]\TU/SimHei(0)/b/n/10.95 、| []\TU/lmtt/m/n/10.95 ISO 15765[]\TU/SimHei(0
-)/b/n/10.95 ） 、| []\TU/lmtt/m/n/10.95 NM[]\TU/SimHei(0)/b/n/10.95 网 络 管 理  |（[]
-\TU/lmtt/m/n/10.95 OSEK/AUTOSAR
- []
-
-
-Overfull \hbox (21.9pt too wide) in paragraph at lines 122--123
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\TU/lmr/bx/n/10.95 AUTOSAR
  []
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/m/it' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 128.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 129.
 
 
 
 [1
 
 ]
-Overfull \hbox (5.14331pt too wide) in paragraph at lines 136--137
-[][]\TU/lmr/bx/n/10.95 CDD \TU/SimHei(0)/b/n/10.95 复 杂 驱 动 开 发[]：|  负 责 座 舱 特 定
- 硬 件 的[]\TU/lmtt/m/n/10.95 CDD[]\TU/lmr/m/n/10.95 ([]\TU/lmtt/m/n/10.95 Complex
- Device Driver[]\TU/lmr/m/n/10.95 ) \TU/SimHei(0)/b/n/10.95 开 发，|  包 括[]\TU/lmt
-t/m/n/10.95 IoHwAb[]\TU/lmr/m/n/10.95 ([]\TU/lmtt/m/n/10.95 IO Hardware
- []
-
-
-Overfull \hbox (15.8541pt too wide) in paragraph at lines 160--161
-[][]\TU/lmr/bx/n/10.95 SWC \TU/SimHei(0)/b/n/10.95 模 块 开 发[]：|  负 责 车 身 域 控 制 器
- 的 部 分[]\TU/lmtt/m/n/10.95 SWC[]\TU/SimHei(0)/b/n/10.95 模 块 开 发，|  包 括[]\TU/lmt
-t/m/n/10.95 Auth[]\TU/SimHei(0)/b/n/10.95 安 全 认 证 模 块  |（基 于[]\TU/lmtt/m/n/10.9
-5 C[]\TU/SimHei(0)/b/n/10.95 语 言） 、| []\TU/lmtt/m/n/10.95 NvmManager[]\TU/SimHe
-i(0)/b/n/10.95 模
- []
-
-
 
 [2]
 
@@ -782,10 +755,10 @@ out' has not changed.
 Here is how much of TeX's memory you used:
  16440 strings out of 408640
  354842 string characters out of 5749145
- 797600 words of memory out of 5000000
+ 794636 words of memory out of 5000000
  39278 multiletter control sequences out of 15000+600000
  564588 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1231b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,1231b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on zhang_kai-xiaomi-smart_cockpit_mcu-20250108.pdf (3 pages).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  20 JAN 2026 21:55
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  4 MAR 2026 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -723,13 +723,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: profile_photo.jpg Graphic file (type bmp)
 <profile_photo.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
-[]|\TU/lmr/bx/n/10.95 AUTOSAR
- []
-
-
 LaTeX Font Warning: Font shape `TU/SimHei(0)/m/it' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 129.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 131.
 
 
 
@@ -753,12 +748,12 @@ out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16440 strings out of 408640
- 354842 string characters out of 5749145
- 794636 words of memory out of 5000000
- 39278 multiletter control sequences out of 15000+600000
+ 16453 strings out of 408640
+ 355634 string characters out of 5749145
+ 796636 words of memory out of 5000000
+ 39291 multiletter control sequences out of 15000+600000
  564588 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1231b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,111p,1231b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on zhang_kai-xiaomi-smart_cockpit_mcu-20250108.pdf (3 pages).

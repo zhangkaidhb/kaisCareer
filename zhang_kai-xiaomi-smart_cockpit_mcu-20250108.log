@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  12 MAR 2026 21:54
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.12.3)  12 MAR 2026 21:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./zhang_kai-xiaomi-smart_cockpit_mcu-20250108.tex
-(zhang_kai-xiaomi-smart_cockpit_mcu-20250108.tex
+**./job/xiaomi/软件工程师-智能座舱MCU方向/zhang_kai-xiaomi-smart_cockpit_mcu-20250108.tex
+(job/xiaomi/软件工程师-智能座舱MCU方向/zhang_kai-xiaomi-smart_cockpit_mcu-20250108.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\Kai\AppData\Roaming\MiKTeX\tex/latex/ctex\ctexart.cls
@@ -561,7 +561,7 @@ Package xeCJK Warning: Redefining CJKfamily `\CJKsfdefault' (Microsoft YaHei).
 Package xeCJK Warning: Redefining CJKfamily `\CJKttdefault' (FangSong).
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 77.
-(zhang_kai-xiaomi-smart_cockpit_mcu-20250108.aux)
+No file zhang_kai-xiaomi-smart_cockpit_mcu-20250108.aux.
 \openout1 = `zhang_kai-xiaomi-smart_cockpit_mcu-20250108.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -642,7 +642,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 79.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 79.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -678,11 +677,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 79.
-(zhang_kai-xiaomi-smart_cockpit_mcu-20250108.out)
-(zhang_kai-xiaomi-smart_cockpit_mcu-20250108.out)
 \@outlinefile=\write3
 \openout3 = `zhang_kai-xiaomi-smart_cockpit_mcu-20250108.out'.
 
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
@@ -720,6 +719,43 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 86.
+
+LaTeX Warning: File `profile_photo.jpg' not found on input line 90.
+
+! Unable to load picture or PDF file 'profile_photo.jpg'.
+<to be read again> 
+                   }
+l.90 ...=3.5cm,keepaspectratio]{profile_photo.jpg}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...=3.5cm,keepaspectratio]{profile_photo.jpg}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 ...=3.5cm,keepaspectratio]{profile_photo.jpg}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 File: profile_photo.jpg Graphic file (type bmp)
 <profile_photo.jpg>
 
@@ -732,28 +768,4 @@ LaTeX Font Warning: Font shape `TU/SimHei(0)/m/it' undefined
 
 ]
 
-[2]
-
-[3] (zhang_kai-xiaomi-smart_cockpit_mcu-20250108.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2022/07/14>
- ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package rerunfilecheck Info: File `zhang_kai-xiaomi-smart_cockpit_mcu-20250108.
-out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
-Here is how much of TeX's memory you used:
- 16453 strings out of 408640
- 355634 string characters out of 5749145
- 795636 words of memory out of 5000000
- 39291 multiletter control sequences out of 15000+600000
- 564588 words of font info for 90 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 93i,11n,111p,1231b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on zhang_kai-xiaomi-smart_cockpit_mcu-20250108.pdf (3 pages).
+[2
